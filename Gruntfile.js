@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 
     watch: {
       all: {
-        files: ['assets/style/scss/*.scss', 'assets/style/scss/**/*.scss', 'assets/script/*.js', 'assets/script/**/*.js'],
+        files: ['assets/stylesheets/scss/*.scss', 'assets/stylesheets/scss/**/*.scss', 'assets/javascript/*.js', 'assets/javascript/**/*.js'],
         tasks: ['webfont', 'clean', 'sass', 'cssmin', 'concat', 'uglify'],
         options: {
           spawn: false
@@ -16,7 +16,7 @@ module.exports = function(grunt) {
       icons: {
         src:        'assets/images/icons/*.svg',
         dest:       'assets/fonts',
-        destCss:    'assets/style/scss/base',
+        destCss:    'assets/stylesheets/scss/base',
         options: {
           font:               'icon-font',
           autoHint:           false,
@@ -33,8 +33,8 @@ module.exports = function(grunt) {
 
     clean: {
       mincss: [
-        'assets/style/css/master.min.css',
-        'assets/style/css/master.css'
+        'assets/stylesheets/css/master.min.css',
+        'assets/stylesheets/css/master.css'
       ]
     },
 
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
           style: 'expanded'
         },
         files: {
-          'assets/style/css/master.css': 'assets/style/scss/master.scss'
+          'assets/stylesheets/css/master.css': 'assets/stylesheets/scss/master.scss'
         }
       }
     },
@@ -52,9 +52,9 @@ module.exports = function(grunt) {
     cssmin: {
       minify: {
         expand: true,
-        cwd: 'assets/style/css',
+        cwd: 'assets/stylesheets/css',
         src: ['*.css', '!*.min.css'],
-        dest: 'assets/style/css',
+        dest: 'assets/stylesheets/css',
         ext: '.min.css'
       }
     },
