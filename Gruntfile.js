@@ -3,9 +3,23 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     watch: {
-      all: {
-        files: ['assets/stylesheets/scss/*.scss', 'assets/stylesheets/scss/**/*.scss', 'assets/javascript/*.js', 'assets/javascript/**/*.js'],
-        tasks: ['webfont', 'clean', 'sass', 'cssmin', 'concat', 'uglify'],
+      stylesheets: {
+        files: ['assets/stylesheets/scss/*.scss', 'assets/stylesheets/scss/**/*.scss'],
+        tasks: ['clean', 'sass', 'cssmin'],
+        options: {
+          spawn: false
+        }
+      },
+      javascripts: {
+        files: ['assets/javascript/*.js', 'assets/javascript/**/*.js'],
+        tasks: ['concat', 'uglify'],
+        options: {
+          spawn: false
+        }
+      },
+      icons: {
+        files: ['assets/images/icons/*.svg'],
+        tasks: ['webfont', 'clean', 'sass', 'cssmin'],
         options: {
           spawn: false
         }
