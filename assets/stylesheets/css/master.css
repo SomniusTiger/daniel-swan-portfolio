@@ -52,6 +52,46 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: icon-font;
+  src: url("../../fonts/icon-font.eot");
+  src: url("../../fonts/icon-font.eot?#iefix") format("embedded-opentype"), url("../../fonts/icon-font.woff") format("woff"), url("../../fonts/icon-font.woff2") format("woff2"), url("../../fonts/icon-font.svg#icon-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: Open Sans;
+  src: url("../../fonts/opensans-regular.eot");
+  src: url("../../fonts/opensans-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/opensans-regular.woff") format("woff"), url("../../fonts/opensans-regular.woff2") format("woff2"), url("../../fonts/opensans-regular.svg#Open Sans") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: Open Sans;
+  src: url("../../fonts/opensans-bold.eot");
+  src: url("../../fonts/opensans-bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/opensans-bold.woff") format("woff"), url("../../fonts/opensans-bold.woff2") format("woff2"), url("../../fonts/opensans-bold.svg#Open Sans") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: Open Sans;
+  src: url("../../fonts/opensans-light.eot");
+  src: url("../../fonts/opensans-light.eot?#iefix") format("embedded-opentype"), url("../../fonts/opensans-light.woff") format("woff"), url("../../fonts/opensans-light.woff2") format("woff2"), url("../../fonts/opensans-light.svg#Open Sans") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: Open Sans;
+  src: url("../../fonts/opensans-semibold.eot");
+  src: url("../../fonts/opensans-semibold.eot?#iefix") format("embedded-opentype"), url("../../fonts/opensans-semibold.woff") format("woff"), url("../../fonts/opensans-semibold.woff2") format("woff2"), url("../../fonts/opensans-semibold.svg#Open Sans") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   font-family: "icon-font";
@@ -68,7 +108,7 @@ table {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-danny:before {
+.icon-danny-face:before {
   content: "\f101";
 }
 
@@ -78,7 +118,9 @@ html {
 }
 
 body {
+  font-family: "Open Sans", sans-serif;
   height: 100%;
+  text-rendering: optimizeLegibility;
   width: 100%;
 }
 
@@ -86,6 +128,41 @@ body {
   height: 100%;
   position: relative;
   width: 100%;
+}
+.hero .hero-text {
+  display: table;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+.hero .hero-text .hero-text-wrap {
+  display: table-cell;
+  padding: 0 20px 30px;
+  vertical-align: middle;
+  width: 100%;
+}
+.hero .hero-text .icon-danny-face {
+  color: #10A68D;
+  font-size: 100px;
+}
+.hero .hero-text .hero-hello {
+  margin: 10px 0;
+  max-width: 182px;
+  width: 60%;
+}
+.hero .hero-text .hero-description {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+}
+.hero .hero-text .hero-description .red {
+  color: #C92222;
+}
+.hero .hero-text .hero-description .teal {
+  color: #10A68D;
 }
 .hero .hero-image {
   background-position: center;

@@ -36,7 +36,7 @@ module.exports = function(grunt) {
           autoHint:           false,
           engine:             'node',
           htmlDemo:           false,
-          relativeFontPath:   '../font',
+          relativeFontPath:   '../fonts',
           syntax:             'bootstrap',
           stylesheet:         'scss',
           styles:             'icon',

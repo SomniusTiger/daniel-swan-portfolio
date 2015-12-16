@@ -1,0 +1,10 @@
+// Import all fonts here
+
+// Icon font
+@include declare-font-face("icon-font", "icon-font");
+
+// Open Sans, 4 weights
+@include declare-font-face("Open Sans", "opensans-regular"); // Regular
+@include declare-font-face("Open Sans", "opensans-bold", bold); // Bold
+@include declare-font-face("Open Sans", "opensans-light", 300); // Light
+@include declare-font-face("Open Sans", "opensans-semibold", 500); // Semibold

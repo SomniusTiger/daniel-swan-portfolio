@@ -3,6 +3,41 @@
   height: 100%;
   position: relative;
   width: 100%;
+  .hero-text {
+    display: table;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    .hero-text-wrap {
+      display: table-cell;
+      padding: 0 20px 30px;
+      vertical-align: middle;
+      width: 100%;
+    }
+    .icon-danny-face {
+      color: $teal;
+      font-size: 100px;
+    }
+    .hero-hello {
+      margin: 10px 0;
+      max-width: 182px;
+      width: 60%;
+    }
+    .hero-description {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 30px;
+      margin: 0 auto;
+      max-width: 500px;
+      width: 100%;
+      .red {
+        color: $red;
+      }
+      .teal {
+        color: $teal;
+      }
+    }
+  }
   .hero-image {
     background-position: center;
     background-size: cover;
