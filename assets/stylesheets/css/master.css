@@ -164,6 +164,19 @@ body {
 .hero .hero-text .hero-description .teal {
   color: #10A68D;
 }
+.hero .down-arrow {
+  background-image: url("../../images/hero/downarrow.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 20px;
+  cursor: pointer;
+  height: 38px;
+  left: 50%;
+  margin-left: -59px;
+  position: absolute;
+  width: 118px;
+  z-index: 5;
+}
 .hero .hero-image {
   background-position: center;
   background-size: cover;
