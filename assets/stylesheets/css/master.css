@@ -223,7 +223,7 @@ body {
 }
 
 footer {
-  padding: 30px 20px;
+  padding: 30px 20px 50px;
   text-align: center;
 }
 footer h2 {
@@ -233,12 +233,6 @@ footer h2 {
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-footer span[class^="icon-"]:before {
-  font-size: 25px;
-  line-height: 25px;
-  margin-right: 10px;
-  vertical-align: baseline;
-}
 footer a {
   -webkit-transition: color 200ms cubic-bezier(0.23, 1, 0.32, 1);
   -moz-transition: color 200ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -247,6 +241,9 @@ footer a {
   transition: color 200ms cubic-bezier(0.23, 1, 0.32, 1);
   color: #404040;
   text-decoration: none;
+}
+footer .contact {
+  margin-bottom: 30px;
 }
 footer .contact .contact-info {
   display: inline-block;
@@ -267,6 +264,33 @@ footer .contact li a {
 }
 footer .contact li a:hover {
   color: #10A68D;
+}
+footer .contact span[class^="icon-"]:before {
+  font-size: 25px;
+  line-height: 25px;
+  margin-right: 10px;
+  vertical-align: baseline;
+}
+footer .social ul.social-networks li {
+  display: inline-block;
+}
+footer .social ul.social-networks li span[class^="icon-"]:before {
+  font-size: 25px;
+  line-height: 25px;
+  margin: 0 12px;
+  vertical-align: baseline;
+}
+footer .social ul.social-networks li .dribbble:hover {
+  color: #ea4c89;
+}
+footer .social ul.social-networks li .twitter:hover {
+  color: #55acee;
+}
+footer .social ul.social-networks li .linkedin:hover {
+  color: #0976b4;
+}
+footer .social ul.social-networks li .vimeo:hover {
+  color: #00b488;
 }
 
 nav.nav-links {

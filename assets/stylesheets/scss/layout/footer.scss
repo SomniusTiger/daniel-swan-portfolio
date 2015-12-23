@@ -1,6 +1,6 @@
 // Footer for all pages
 footer {
-  padding: 30px 20px;
+  padding: 30px 20px 50px;
   text-align: center;
   h2 {
     font-size: 15px;
@@ -9,18 +9,13 @@ footer {
     margin-bottom: 20px;
     text-transform: uppercase;
   }
-  span[class^="icon-"]:before {
-    font-size: 25px;
-    line-height: 25px;
-    margin-right: 10px;
-    vertical-align: baseline;
-  }
   a {
     @include transition(color $speed $ease);
     color: $black;
     text-decoration: none;
   }
   .contact {
+    margin-bottom: 30px;
     .contact-info {
       display: inline-block;
       margin: 0 auto;
@@ -41,8 +36,28 @@ footer {
         }
       }
     }
+    span[class^="icon-"]:before {
+      font-size: 25px;
+      line-height: 25px;
+      margin-right: 10px;
+      vertical-align: baseline;
+    }
   }
   .social {
-
+    ul.social-networks {
+      li {
+        display: inline-block;
+        span[class^="icon-"]:before {
+          font-size: 25px;
+          line-height: 25px;
+          margin: 0 12px;
+          vertical-align: baseline;
+        }
+        .dribbble:hover {   color: $dribbble-color; }
+        .twitter:hover {    color: $twitter-color; }
+        .linkedin:hover {   color: $linkedin-color; }
+        .vimeo:hover {      color: $vimeo-color; }
+      }
+    }
   }
 }
