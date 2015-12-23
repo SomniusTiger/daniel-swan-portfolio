@@ -1,0 +1,48 @@
+// Footer for all pages
+footer {
+  padding: 30px 20px;
+  text-align: center;
+  h2 {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  span[class^="icon-"]:before {
+    font-size: 25px;
+    line-height: 25px;
+    margin-right: 10px;
+    vertical-align: baseline;
+  }
+  a {
+    @include transition(color $speed $ease);
+    color: $black;
+    text-decoration: none;
+  }
+  .contact {
+    .contact-info {
+      display: inline-block;
+      margin: 0 auto;
+      text-align: left;
+    }
+    li {
+      padding-bottom: 10px;
+      &.phone {
+        margin-left: 4px;
+        a {
+          margin-left: -4px;
+        }
+      }
+      a {
+        line-height: 25px;
+        &:hover {
+          color: $teal;
+        }
+      }
+    }
+  }
+  .social {
+
+  }
+}
