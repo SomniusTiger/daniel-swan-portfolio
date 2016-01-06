@@ -16,13 +16,20 @@ nav {
       text-decoration: none;
       text-transform: uppercase;
       &:after {
+        @include transition(opacity $speed $ease);
         background-color: $black;
         bottom: 0;
         content: "";
         left: 0;
         height: 1px;
+        opacity: 1;
         position: absolute;
         width: 97%;
+      }
+      &:hover {
+        &:after {
+          opacity: 0;
+        }
       }
     }
   }

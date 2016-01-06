@@ -15,12 +15,39 @@
   }
 }
 
+// Clearfix using :after pseudoselector
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 // Box Sizing
 @mixin box-sizing($box-sizing: border-box) {
   -webkit-box-sizing: $box-sizing;
   -moz-box-sizing: $box-sizing;
   -o-box-sizing: $box-sizing;
   box-sizing: $box-sizing;
+}
+
+// Box shadow
+@mixin box-shadow($x, $y, $blur, $color, $inset:"") {
+  -webkit-box-shadow: $x $y $blur $color #{$inset};
+  -moz-box-shadow:    $x $y $blur $color #{$inset};
+  box-shadow:         $x $y $blur $color #{$inset};
+}
+
+// Project Square Gradient
+@mixin project-square-gradient($from-color, $to-color) {
+  background: $to-color;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from-color), to($to-color));
+  background: -webkit-linear-gradient(top, $from-color, $to-color); 
+  background:    -moz-linear-gradient(top, $from-color, $to-color);
+  background:     -ms-linear-gradient(top, $from-color, $to-color);
+  background:      -o-linear-gradient(top, $from-color, $to-color);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$from-color}', EndColorStr='#{$to-color}')";
 }
 
 // Transitions
