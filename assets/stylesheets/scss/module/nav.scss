@@ -1,35 +1,33 @@
 // Navigation elements
-nav {
-  &.nav-links {
-    padding: 30px 20px;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    width: 100%;
-    .nav-link {
-      color: $black;
-      font-size: 16px;
-      font-weight: 300; 
-      letter-spacing: 0.2em;
-      margin: 0 10px;
-      position: relative;
-      text-decoration: none;
-      text-transform: uppercase;
+.nav {
+  padding: 30px 20px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  &-link {
+    color: $black;
+    font-size: 16px;
+    font-weight: 300; 
+    letter-spacing: 0.2em;
+    margin: 0 10px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:after {
+      @include transition(opacity $speed $ease);
+      background-color: $black;
+      bottom: -4px;
+      content: "";
+      left: 0;
+      height: 1px;
+      opacity: 1;
+      position: absolute;
+      width: 97%;
+    }
+    &:hover {
       &:after {
-        @include transition(opacity $speed $ease);
-        background-color: $black;
-        bottom: 0;
-        content: "";
-        left: 0;
-        height: 1px;
-        opacity: 1;
-        position: absolute;
-        width: 97%;
-      }
-      &:hover {
-        &:after {
-          opacity: 0;
-        }
+        opacity: 0;
       }
     }
   }

@@ -29,7 +29,7 @@ var dnlswan = new function() {
 
   // Applied functions
   this.scrollBelowFold = function() {
-    var scrollDownButton = document.querySelector('.down-arrow');
+    var scrollDownButton = document.querySelector('.hero-down_arrow');
     scrollDownButton.onclick = function() {
       var destination = document.querySelector('.hero').offsetHeight;
       self.scrollTo(document.body, destination, speed);

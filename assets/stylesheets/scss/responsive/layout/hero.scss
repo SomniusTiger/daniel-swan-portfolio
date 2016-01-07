@@ -1,0 +1,11 @@
+// Responsive styles for the hero
+@media screen and (min-width: 1024px) {
+  .hero {
+    &-text {
+      &-description {
+        font-size: 27px;
+        line-height: 37px; 
+      }
+    }
+  }
+}

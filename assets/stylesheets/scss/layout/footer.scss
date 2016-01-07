@@ -16,24 +16,24 @@ footer {
   }
   .contact {
     margin-bottom: 30px;
-    .contact-info {
+    &-info {
       display: inline-block;
       margin: 0 auto;
       text-align: left;
     }
-    li {
+    &-email, &-phone {
       padding-bottom: 10px;
-      &.phone {
-        margin-left: 4px;
-        a {
-          margin-left: -4px;
-        }
-      }
       a {
         line-height: 25px;
         &:hover {
           color: $teal;
         }
+      }
+    }
+    &-phone {
+      margin-left: 4px;
+      a {
+        margin-left: -4px;
       }
     }
     span[class^="icon-"]:before {
@@ -44,7 +44,7 @@ footer {
     }
   }
   .social {
-    ul.social-networks {
+    &-networks {
       li {
         display: inline-block;
         span[class^="icon-"]:before {

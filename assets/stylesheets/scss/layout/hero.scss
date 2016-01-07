@@ -3,12 +3,12 @@
   height: 100%;
   position: relative;
   width: 100%;
-  .hero-text {
+  &-text {
     display: table;
     height: 100%;
     text-align: center;
     width: 100%;
-    .hero-text-wrap {
+    &-wrap {
       display: table-cell;
       padding: 0 20px 30px;
       vertical-align: middle;
@@ -18,27 +18,27 @@
       color: $teal;
       font-size: 100px;
     }
-    .hero-hello {
+    &-hello {
       margin: 10px 0;
       max-width: 182px;
       width: 60%;
     }
-    .hero-description {
+    &-description {
       font-size: 20px;
       font-weight: 300;
       line-height: 30px;
       margin: 0 auto;
       max-width: 500px;
       width: 100%;
-      .red {
+      &--red {
         color: $red;
       }
-      .teal {
+      &--teal {
         color: $teal;
       }
     }
   }
-  .down-arrow {
+  &-down_arrow {
     background-image: url('../../images/hero/downarrow.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -51,7 +51,7 @@
     width: 118px;
     z-index: 5;
   }
-  .hero-image {
+  &-image {
     background-position: center;
     background-size: cover;
     bottom: 0;
