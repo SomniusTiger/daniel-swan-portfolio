@@ -1,0 +1,25 @@
+// Responsive project squares
+@media screen and (min-width: 481px) {
+  .project-square {
+    float: left;
+    padding-bottom: 50%;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 961px) {
+  .project-square {
+    float: left;
+    padding-bottom: 33.33333333%;
+    width: 33.33333333%;
+    &-text {
+      h2 {
+        font-size: 25px;
+        line-height: 30px;
+      }
+      p {
+        font-size: 17px;
+        line-height: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+// Styles for the project square container
+.projects {
+  background-color: $teal;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.project-square-container {
+  @include box-shadow(0, 0, 25px, $black);
+  @include clearfix();
+  max-width: 1440px;
+  margin: 0 auto;
+}

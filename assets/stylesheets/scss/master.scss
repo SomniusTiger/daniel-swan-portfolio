@@ -13,7 +13,7 @@
 // Layout
 @import "layout/hero";
 @import "layout/footer";
-@import "layout/project-squares-container";
+@import "layout/project-square-container";
 
 // Module
 @import "module/nav";
@@ -22,5 +22,7 @@
 // Responsive
 // -- Layout
 @import "responsive/layout/hero";
+@import "responsive/layout/footer";
 // -- Module
 @import "responsive/module/nav";
+@import "responsive/module/project-square";
