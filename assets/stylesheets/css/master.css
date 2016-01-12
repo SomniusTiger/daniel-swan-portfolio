@@ -252,13 +252,13 @@ footer .contact-info {
   margin: 0 auto;
   text-align: left;
 }
-footer .contact-email, footer .contact-phone {
+footer .contact-info-email, footer .contact-info-phone {
   padding-bottom: 10px;
 }
-footer .contact-email a, footer .contact-phone a {
+footer .contact-info-email a, footer .contact-info-phone a {
   line-height: 25px;
 }
-footer .contact-email a:hover, footer .contact-phone a:hover {
+footer .contact-info-email a:hover, footer .contact-info-phone a:hover {
   color: #10A68D;
 }
 footer .contact-phone {

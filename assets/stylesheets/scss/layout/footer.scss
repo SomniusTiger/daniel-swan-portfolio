@@ -22,13 +22,13 @@ footer {
       display: inline-block;
       margin: 0 auto;
       text-align: left;
-    }
-    &-email, &-phone {
-      padding-bottom: 10px;
-      a {
-        line-height: 25px;
-        &:hover {
-          color: $teal;
+      &-email, &-phone {
+        padding-bottom: 10px;
+        a {
+          line-height: 25px;
+          &:hover {
+            color: $teal;
+          }
         }
       }
     }
