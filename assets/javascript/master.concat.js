@@ -5,6 +5,8 @@ var dnlswan = new function() {
   this.init = function() {
     // Initialize all functions on page load
     self.scrollBelowFold();
+    self.scrollToWork();
+    self.scrollToAbout();
   };
 
   // Base functions
@@ -23,7 +25,7 @@ var dnlswan = new function() {
         var currPosition = self.easeInOutQuart(time, origin, destination - origin, duration);
         element.scrollTop = currPosition;
         if (time >= duration) clearInterval(timer);
-      }, 10);
+      }, 16.67);
     }
   };
 
@@ -32,6 +34,22 @@ var dnlswan = new function() {
     var scrollDownButton = document.querySelector('.hero-down_arrow');
     scrollDownButton.onclick = function() {
       var destination = document.querySelector('.hero').offsetHeight;
+      self.scrollTo(document.body, destination, speed);
+    }
+  };
+  this.scrollToWork = function(){
+    var workAnchor = document.querySelector('a.nav-link.work');
+    workAnchor.onclick = function(evt) {
+      evt.preventDefault();
+      var destination = document.querySelector('section.projects').getBoundingClientRect().top;
+      self.scrollTo(document.body, destination, speed);
+    }
+  };
+  this.scrollToAbout = function() {
+    var aboutAnchor = document.querySelector('a.nav-link.about');
+    aboutAnchor.onclick = function(evt) {
+      evt.preventDefault();
+      var destination = document.querySelector('section.about').getBoundingClientRect().top;
       self.scrollTo(document.body, destination, speed);
     }
   }

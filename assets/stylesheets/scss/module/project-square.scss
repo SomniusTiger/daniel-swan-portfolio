@@ -1,6 +1,8 @@
 // Styles for individual project squares
 .project-square {
   background-size: cover;
+  border-left: solid 1px $white;
+  border-top: solid 1px $white;
   height: 0;
   padding-bottom: 100%;
   position: relative;
