@@ -31,3 +31,13 @@
     }
   }
 }
+@media screen and (min-width: 1441px) {
+  .about-section {
+    &-picture {
+      width: 45%;
+    }
+    &-text {
+      width: 55%;
+    }
+  }
+}

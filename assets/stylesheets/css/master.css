@@ -532,6 +532,14 @@ footer .social-networks li .vimeo:hover {
     max-width: 420px;
   }
 }
+@media screen and (min-width: 1441px) {
+  .about-section-picture {
+    width: 45%;
+  }
+  .about-section-text {
+    width: 55%;
+  }
+}
 @media screen and (min-width: 1024px) {
   .nav {
     text-align: right;
