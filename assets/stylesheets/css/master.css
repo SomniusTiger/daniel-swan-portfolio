@@ -314,6 +314,54 @@ footer .social-networks li .vimeo:hover {
   clear: both;
 }
 
+.about-section {
+  background-image: url("../../images/about/city-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.about-section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.about-section-picture {
+  display: block;
+  padding: 30px 0;
+  width: 100%;
+}
+.about-section-picture img {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-clip: padding-box;
+  max-width: 150px;
+  width: 100%;
+}
+.about-section-text {
+  display: block;
+  margin: 0 auto;
+  padding: 0 30px 40px;
+  width: 100%;
+}
+.about-section-text h2 {
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.about-section-text p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 14px;
+  text-align: left;
+}
+
 .nav {
   padding: 30px 20px;
   position: absolute;
@@ -452,6 +500,36 @@ footer .social-networks li .vimeo:hover {
   }
   footer .social-networks li span[class^="icon-"]:before {
     margin: 0 24px 0 0;
+  }
+}
+@media screen and (min-width: 560px) {
+  .about-section {
+    display: table;
+  }
+  .about-section-picture, .about-section-text {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .about-section-picture {
+    width: 40%;
+  }
+  .about-section-text {
+    padding: 30px;
+    width: 60%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-section-picture {
+    text-align: right;
+  }
+  .about-section-picture img {
+    margin-right: 60px;
+  }
+  .about-section-text {
+    padding: 80px 30px;
+  }
+  .about-section-text h2, .about-section-text p {
+    max-width: 420px;
   }
 }
 @media screen and (min-width: 1024px) {

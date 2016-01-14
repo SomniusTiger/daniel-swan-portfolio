@@ -1,0 +1,41 @@
+// About section on homepage
+.about-section {
+  @include clearfix();
+  background-image: url("../../images/about/city-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  &-picture {
+    display: block;
+    padding: 30px 0;
+    width: 100%;
+    img {
+      @include border-radius(50%);
+      max-width: 150px;
+      width: 100%;
+    }
+  }
+  &-text {
+    display: block;
+    margin: 0 auto;
+    padding: 0 30px 40px;
+    width: 100%;
+    h2 {
+      font-size: 22px;
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      line-height: 30px;
+      text-align: left;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 14px;
+      line-height: 24px;
+      margin-top: 14px;
+      text-align: left;
+    }
+  }
+}

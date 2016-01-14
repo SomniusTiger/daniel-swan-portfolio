@@ -49,7 +49,7 @@ var dnlswan = new function() {
     var aboutAnchor = document.querySelector('a.nav-link.about');
     aboutAnchor.onclick = function(evt) {
       evt.preventDefault();
-      var destination = document.querySelector('section.about').getBoundingClientRect().top;
+      var destination = document.querySelector('section.about-section').getBoundingClientRect().top;
       self.scrollTo(document.body, destination, speed);
     }
   }

@@ -5,14 +5,22 @@
   @font-face {
     font-family: #{$font-family};
     src: url("../../fonts/#{$font-filename}.eot");
-    src: url("../../fonts/#{$font-filename}.eot?#iefix") format("embedded-opentype"), 
+    src: url("../../fonts/#{$font-filename}.eot?#iefix") format("embedded-opentype"),
          url("../../fonts/#{$font-filename}.woff") format("woff"),
-         url("../../fonts/#{$font-filename}.woff2") format("woff2"), 
+         url("../../fonts/#{$font-filename}.woff2") format("woff2"),
          url("../../fonts/#{$font-filename}.svg##{$font-family}") format("svg");
     font-weight: $font-weight;
     font-style: $font-style;
     font-stretch: $font-stretch;
   }
+}
+
+// Border Radius
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  // stops bg color from leaking outside the border:
 }
 
 // Clearfix using :after pseudoselector
@@ -43,7 +51,7 @@
 @mixin project-square-gradient($from-color, $to-color) {
   background: $to-color;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from-color), to($to-color));
-  background: -webkit-linear-gradient(top, $from-color, $to-color); 
+  background: -webkit-linear-gradient(top, $from-color, $to-color);
   background:    -moz-linear-gradient(top, $from-color, $to-color);
   background:     -ms-linear-gradient(top, $from-color, $to-color);
   background:      -o-linear-gradient(top, $from-color, $to-color);
