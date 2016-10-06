@@ -398,6 +398,17 @@ footer .social-networks li .vimeo:hover {
 .nav-link:hover:after {
   opacity: 0;
 }
+.nav-link.home {
+  color: #10A68D;
+  display: block;
+  float: left;
+  font-size: 72px;
+  position: relative;
+  margin-top: -20px;
+}
+.nav-link.home:after {
+  height: 0;
+}
 
 .project-square {
   background-size: cover;

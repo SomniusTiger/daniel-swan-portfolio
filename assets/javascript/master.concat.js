@@ -32,25 +32,31 @@ var dnlswan = new function() {
   // Applied functions
   this.scrollBelowFold = function() {
     var scrollDownButton = document.querySelector('.hero-down_arrow');
-    scrollDownButton.onclick = function() {
-      var destination = document.querySelector('.hero').offsetHeight;
-      self.scrollTo(document.body, destination, speed);
+    if (typeof(scrollDownButton) != 'undefined' && scrollDownButton != null) {
+      scrollDownButton.onclick = function() {
+        var destination = document.querySelector('.hero').offsetHeight;
+        self.scrollTo(document.body, destination, speed);
+      }
     }
   };
   this.scrollToWork = function(){
     var workAnchor = document.querySelector('a.nav-link.work');
-    workAnchor.onclick = function(evt) {
-      evt.preventDefault();
-      var destination = document.querySelector('section.projects').getBoundingClientRect().top;
-      self.scrollTo(document.body, destination, speed);
+    if (typeof(workAnchor) != 'undefined' && workAnchor != null) {
+      workAnchor.onclick = function(evt) {
+        evt.preventDefault();
+        var destination = document.querySelector('section.projects').getBoundingClientRect().top;
+        self.scrollTo(document.body, destination, speed);
+      }
     }
   };
   this.scrollToAbout = function() {
     var aboutAnchor = document.querySelector('a.nav-link.about');
-    aboutAnchor.onclick = function(evt) {
-      evt.preventDefault();
-      var destination = document.querySelector('section.about-section').getBoundingClientRect().top;
-      self.scrollTo(document.body, destination, speed);
+    if (typeof(aboutAnchor) != 'undefined' && aboutAnchor != null) {
+      aboutAnchor.onclick = function(evt) {
+        evt.preventDefault();
+        var destination = document.querySelector('section.about-section').getBoundingClientRect().top;
+        self.scrollTo(document.body, destination, speed);
+      }
     }
   }
 
