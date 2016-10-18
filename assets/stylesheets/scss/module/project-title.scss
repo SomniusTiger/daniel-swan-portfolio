@@ -1,0 +1,33 @@
+// The project title on the top of project pages
+.project-title {
+  @include clearfix();
+  padding: 20px 24px;
+  width: 100%;
+  &-logo {
+    margin: 0 auto;
+    width: 80px;
+    img {
+      width: 100%;
+    }
+  }
+  &-text {
+    padding-top: 20px;
+  }
+  &-name {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  &-tags {
+    color: $grey-dark;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

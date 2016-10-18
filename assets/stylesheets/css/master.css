@@ -209,6 +209,9 @@ body {
   width: 118px;
   z-index: 5;
 }
+.hero-down_arrow.light {
+  background-image: url("../../images/hero/downarrow-light.png");
+}
 .hero-image {
   background-position: center;
   background-size: cover;
@@ -373,6 +376,7 @@ footer .social-networks li .vimeo:hover {
   background-color: #ffffff;
   padding: 10px 20px 15px;
   text-align: right;
+  z-index: 9999;
 }
 .nav.project .nav-link {
   display: inline-block;
@@ -495,6 +499,43 @@ footer .social-networks li .vimeo:hover {
 }
 .project-square:hover .project-square-text {
   padding-bottom: 50px;
+}
+
+.project-title {
+  padding: 20px 24px;
+  width: 100%;
+}
+.project-title:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.project-title-logo {
+  margin: 0 auto;
+  width: 80px;
+}
+.project-title-logo img {
+  width: 100%;
+}
+.project-title-text {
+  padding-top: 20px;
+}
+.project-title-name {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.project-title-tags {
+  color: #4A4A4A;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.project-title p {
+  font-size: 14px;
+  line-height: 24px;
 }
 
 @media screen and (min-width: 1024px) {

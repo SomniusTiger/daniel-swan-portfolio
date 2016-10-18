@@ -50,6 +50,9 @@
     position: absolute;
     width: 118px;
     z-index: 5;
+    &.light {
+      background-image: url('../../images/hero/downarrow-light.png');
+    }
   }
   &-image {
     background-position: center;
