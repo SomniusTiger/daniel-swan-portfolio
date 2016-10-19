@@ -1,7 +1,7 @@
 // The project title on the top of project pages
 .project-title {
   @include clearfix();
-  padding: 20px 24px;
+  padding: 40px 24px;
   width: 100%;
   &-logo {
     margin: 0 auto;
@@ -12,6 +12,8 @@
   }
   &-text {
     padding-top: 20px;
+    max-width: 460px;
+    width: 100%;
   }
   &-name {
     font-size: 30px;

@@ -508,7 +508,7 @@ footer .social-networks li .vimeo:hover {
 }
 
 .project-title {
-  padding: 20px 24px;
+  padding: 40px 24px;
   width: 100%;
 }
 .project-title:after {
@@ -525,6 +525,8 @@ footer .social-networks li .vimeo:hover {
 }
 .project-title-text {
   padding-top: 20px;
+  max-width: 460px;
+  width: 100%;
 }
 .project-title-name {
   font-size: 30px;
@@ -670,6 +672,26 @@ footer .social-networks li .vimeo:hover {
   .project-square-text p {
     font-size: 17px;
     line-height: 24px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .project-title-logo {
+    float: left;
+    width: 100px;
+  }
+  .project-title-text {
+    float: left;
+    padding-left: 30px;
+    padding-top: 0;
+    width: calc(100% - 100px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .project-title-logo {
+    width: 164px;
+  }
+  .project-title-text {
+    width: calc(100% - 164px);
   }
 }
 
