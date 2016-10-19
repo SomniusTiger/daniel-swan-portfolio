@@ -365,6 +365,12 @@ footer .social-networks li .vimeo:hover {
   text-align: left;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
+}
+
 .nav {
   padding: 30px 20px;
   position: absolute;
@@ -606,6 +612,29 @@ footer .social-networks li .vimeo:hover {
   }
   .about-section-text {
     width: 55%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .nav.project {
+    padding: 15px 20px;
+  }
+  .nav.project .nav-link {
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    margin-top: 5px;
+  }
+  .nav.project .nav-link.home {
+    font-size: 60px;
+    margin-top: 0;
+  }
+  .nav.project .nav-link.home:after {
+    height: 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  .nav.project .nav-link {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 @media screen and (min-width: 1024px) {
