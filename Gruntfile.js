@@ -11,7 +11,7 @@ module.exports = function(grunt) {
         }
       },
       javascripts: {
-        files: ['assets/javascript/*.js', 'assets/javascript/**/*.js'],
+        files: ['assets/javascript/*.js'],
         tasks: ['concat', 'uglify'],
         options: {
           spawn: false
@@ -78,14 +78,14 @@ module.exports = function(grunt) {
         src: [
           'assets/javascript/master.js'
         ],
-        dest: 'assets/javascript/master.concat.js'
+        dest: 'assets/javascript/dist/master.concat.js'
       }
     },
 
     uglify: {
       app: {
         files: {
-          'assets/javascript/master.min.js': ['assets/javascript/master.concat.js']
+          'assets/javascript/dist/master.min.js': ['assets/javascript/dist/master.concat.js']
         }
       }
     }
