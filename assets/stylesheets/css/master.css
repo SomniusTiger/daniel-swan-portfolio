@@ -546,6 +546,35 @@ footer .social-networks li .vimeo:hover {
   line-height: 24px;
 }
 
+.project-section {
+  padding: 50px 24px;
+}
+.project-section--dark {
+  background-color: #F7F7F7;
+}
+.project-section-title {
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.project-section-title--big {
+  font-size: 29px;
+}
+.project-section-text {
+  margin: 20px 0 0;
+}
+.project-section-text-p {
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+.project-section-text-p:last-child {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 1024px) {
   .hero-text-description {
     font-size: 27px;
@@ -692,6 +721,23 @@ footer .social-networks li .vimeo:hover {
   }
   .project-title-text {
     width: calc(100% - 164px);
+  }
+}
+@media screen and (min-width: 700px) {
+  .project-section-text:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .project-section-text-p {
+    float: left;
+    width: 50%;
+  }
+  .project-section-text-p:nth-child(odd) {
+    padding-right: 20px;
+  }
+  .project-section-text-p:nth-child(even) {
+    padding-left: 20px;
   }
 }
 

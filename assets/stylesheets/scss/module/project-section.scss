@@ -1,4 +1,30 @@
 // Project sections on project pages
 .project-section {
+  padding: 50px 24px;
+  &--dark {
+    background-color: $whitish;
+  }
 
+  &-title {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    &--big {
+      font-size: 29px;
+    }
+  }
+  &-text {
+    margin: 20px 0 0;
+    &-p {
+      font-size: 15px;
+      line-height: 24px;
+      margin-bottom: 20px;
+      max-width: 600px;
+      width: 100%;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
