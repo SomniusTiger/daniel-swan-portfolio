@@ -19,7 +19,7 @@
       font-size: 100px;
     }
     &-title {
-      font-size: 36px;
+      font-size: 34px;
       font-weight: 300;
       margin: 30px 0 20px;
     }
@@ -30,12 +30,6 @@
       margin: 0 auto;
       max-width: 500px;
       width: 100%;
-      &--red {
-        color: $red;
-      }
-      &--teal {
-        color: $teal;
-      }
     }
   }
   &-down_arrow {
