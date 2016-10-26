@@ -1,16 +1,23 @@
 // Reponsive styles for the nav
 @media screen and (min-width: 600px) {
-  .nav.project {
-    padding: 15px 20px;
-    .nav-link {
-      font-size: 16px;
-      letter-spacing: 0.2em;
-      margin-top: 5px;
-      &.home {
-        font-size: 60px;
-        margin-top: 0;
-        &:after {
-          height: 0;
+  .nav {
+    &--project {
+      padding: 15px 20px;
+      .nav-link {
+
+      }
+    }
+    &-link {
+      &--project {
+        font-size: 16px;
+        letter-spacing: 0.2em;
+        margin-top: 5px;
+        &--home {
+          font-size: 60px;
+          margin-top: 0;
+          &:after {
+            height: 0;
+          }
         }
       }
     }
@@ -18,11 +25,11 @@
 }
 
 @media screen and (min-width: 800px) {
-  .nav.project {
-    .nav-link {
-      margin: {
-        left: 20px;
-        right: 20px;
+  .nav {
+    &-link {
+      &--project {
+        margin-left: 20px;
+        margin-right: 20px;
       }
     }
   }
@@ -35,6 +42,12 @@
     padding-top: 36px;
     &-link {
       margin: 0 25px;
+      &--project {
+        &--home {
+          margin-top: -10px;
+          padding-bottom: 10px;
+        }
+      }
       &:last-child {
         margin-right: 0;
       }
