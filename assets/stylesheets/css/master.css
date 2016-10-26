@@ -177,10 +177,10 @@ body {
   color: #10A68D;
   font-size: 100px;
 }
-.hero-text-hello {
-  margin: 10px 0;
-  max-width: 182px;
-  width: 60%;
+.hero-text-title {
+  font-size: 36px;
+  font-weight: 300;
+  margin: 30px 0 20px;
 }
 .hero-text-description {
   font-size: 20px;
@@ -231,7 +231,7 @@ footer {
   padding: 30px 20px 50px;
   text-align: center;
 }
-footer h2 {
+footer h3 {
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 0.2em;
@@ -350,7 +350,7 @@ footer .social-networks li .vimeo:hover {
   padding: 0 30px 40px;
   width: 100%;
 }
-.about-section-text h2 {
+.about-section-text h3 {
   font-size: 22px;
   font-weight: 300;
   letter-spacing: 0.1em;
@@ -378,33 +378,11 @@ footer .social-networks li .vimeo:hover {
   top: 0;
   width: 100%;
 }
-.nav.project {
+.nav--project {
   background-color: #ffffff;
   padding: 10px 20px 15px;
   text-align: right;
   z-index: 9999;
-}
-.nav.project .nav-link {
-  display: inline-block;
-  font-size: 10px;
-  letter-spacing: 0;
-  margin-top: 0px;
-}
-.nav.project .nav-link:after {
-  bottom: 0;
-}
-.nav.project .nav-link.home {
-  color: #10A68D;
-  display: block;
-  float: left;
-  font-size: 40px;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  margin-top: 0;
-}
-.nav.project .nav-link.home:after {
-  height: 0;
 }
 .nav-link {
   color: #404040;
@@ -434,6 +412,28 @@ footer .social-networks li .vimeo:hover {
 }
 .nav-link:hover:after {
   opacity: 0;
+}
+.nav-link--project {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 0;
+  margin-top: 0px;
+}
+.nav-link--project:after {
+  bottom: 0;
+}
+.nav-link--project--home {
+  color: #10A68D;
+  display: block;
+  float: left;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  margin-top: 0;
+}
+.nav-link--project--home:after {
+  height: 0;
 }
 
 .project-square {
@@ -476,7 +476,7 @@ footer .social-networks li .vimeo:hover {
   width: 100%;
   z-index: 2;
 }
-.project-square-text h2 {
+.project-square-text h3 {
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
@@ -633,7 +633,7 @@ footer .social-networks li .vimeo:hover {
   .about-section-text {
     padding: 80px 30px;
   }
-  .about-section-text h2, .about-section-text p {
+  .about-section-text h3, .about-section-text p {
     max-width: 420px;
   }
 }
@@ -694,7 +694,7 @@ footer .social-networks li .vimeo:hover {
     padding-bottom: 33.33333333%;
     width: 33.33333333%;
   }
-  .project-square-text h2 {
+  .project-square-text h3 {
     font-size: 25px;
     line-height: 30px;
   }
