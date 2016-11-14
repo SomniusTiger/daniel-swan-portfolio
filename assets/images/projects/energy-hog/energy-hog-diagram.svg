@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="749px" height="97px" viewBox="0 0 749 97" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>Diagram</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="32" height="27" rx="13.5"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="32" height="27" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M22,23 C22,20.2385763 19.5375661,18 16.5,18 C13.4624339,18 11,20.2385763 11,23 L22,23 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="11" height="5" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="0" y="0" width="32" height="27" rx="13.5"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="32" height="27" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <path d="M22,23 C22,20.2385763 19.5375661,18 16.5,18 C13.4624339,18 11,20.2385763 11,23 L22,23 Z" id="path-7"></path>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="11" height="5" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+    </defs>
+    <g id="Energy-Hog" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Energy-Hog-Case-Study" transform="translate(-346.000000, -2129.000000)">
+            <g id="Outlet-Section" transform="translate(0.000000, 1907.000000)">
+                <g id="Diagram" transform="translate(347.000000, 223.000000)">
+                    <g id="iPhone" transform="translate(699.000000, 0.000000)">
+                        <path d="M5.38967779,0 C2.41304094,0 0,2.41976298 0,5.37980616 L0,89.6201938 C0,92.5913787 2.41322252,95 5.38967779,95 L42.6103222,95 C45.5869591,95 48,92.580237 48,89.6201938 L48,5.37980616 C48,2.40862126 45.5867775,0 42.6103222,0 L5.38967779,0 Z" id="Path-87" stroke="#E14949" stroke-width="2" stroke-linejoin="round"></path>
+                        <ellipse id="Oval-5" fill="#E14949" cx="14.5" cy="5.5" rx="1.5" ry="1.5"></ellipse>
+                        <ellipse id="Oval-5" fill="#E14949" cx="24" cy="89" rx="3" ry="3"></ellipse>
+                        <path d="M0,12 L48,12 M48,82 L0,82" id="Rectangle-44" stroke="#E14949" stroke-width="2"></path>
+                        <rect id="Rectangle-45" fill="#E14949" x="17" y="4" width="15" height="3" rx="1.5"></rect>
+                    </g>
+                    <g id="Wifi" transform="translate(572.000000, 20.000000)" stroke="#E14949" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9,47 C14.5330703,42.0295002 18,34.9013098 18,26.9827317 C18,19.0824755 14.5490952,11.9689536 9.03837381,7" id="Oval-7"></path>
+                        <path d="M0,39 C3.05893138,36.2151349 5,32.0615232 5,27.4218136 C5,22.868164 3.13027158,18.7827465 0.169057188,16" id="Oval-7"></path>
+                        <path d="M16,55 C16.2456901,54.7702245 16.4883087,54.5372645 16.7277884,54.3011869 C23.6906169,47.4372715 28,37.937791 28,27.4419629 C28,17.0841855 23.8032332,7.69671823 17.0011518,0.854944425 C16.71325,0.565362647 16.420681,0.280341354 16.1235653,0" id="Oval-8"></path>
+                    </g>
+                    <g id="Plug" transform="translate(425.000000, 0.000000)">
+                        <polygon id="Path-87" stroke="#E14949" stroke-width="2" stroke-linejoin="round" points="0 0 0 95 48 95 48 0"></polygon>
+                        <g id="Group-3" transform="translate(8.000000, 16.000000)" stroke="#E14949">
+                            <use id="Rectangle-35" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                            <path d="M8,5.33333333 L8,14.6666667" id="Line" stroke-width="2" stroke-linecap="round"></path>
+                            <path d="M24,4.75 L24,15.25" id="Line" stroke-width="2" stroke-linecap="round"></path>
+                            <use id="Oval-3" mask="url(#mask-4)" stroke-width="4" xlink:href="#path-3"></use>
+                        </g>
+                        <g id="Group-3" transform="translate(8.000000, 51.000000)" stroke="#E14949">
+                            <use id="Rectangle-35" mask="url(#mask-6)" stroke-width="4" xlink:href="#path-5"></use>
+                            <path d="M8,5.33333333 L8,14.6666667" id="Line" stroke-width="2" stroke-linecap="round"></path>
+                            <path d="M24,4.75 L24,15.25" id="Line" stroke-width="2" stroke-linecap="round"></path>
+                            <use id="Oval-3" mask="url(#mask-8)" stroke-width="4" xlink:href="#path-7"></use>
+                        </g>
+                        <ellipse id="Oval-5" fill="#E14949" cx="24.5" cy="6.5" rx="1.5" ry="1.5"></ellipse>
+                        <ellipse id="Oval-5" fill="#E14949" cx="24.5" cy="87.5" rx="1.5" ry="1.5"></ellipse>
+                    </g>
+                    <g id="Cable" transform="translate(188.000000, 19.000000)">
+                        <rect id="Rectangle-37" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="83" y="0" width="24" height="56"></rect>
+                        <rect id="Rectangle-37" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="69" y="11" width="14" height="35"></rect>
+                        <path d="M107,25 L134.793103,25 C138,25 138,20.3333333 138,18.5384615 L138,18.5384615 C138,15.6666667 138,11 134.793103,11 L107,11" id="Rectangle-37" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M107,47 L132,47 L132,47 C132,36 132,36 129.413793,36 L107,36" id="Rectangle-37" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M68.999997,56 L29.1049915,56 C27.3222314,56 25.8770188,54.5629837 25.8770188,52.777906 L25.8770183,33.0696453 C25.8770183,32.4788965 25.3945529,32 24.7980602,32 L-1.4304528e-06,32 L-1.4304528e-06,27 L27.6854621,27.0000004 C29.4684542,27.0000004 30.9138549,28.4370233 30.9138549,30.2221091 L30.9138558,49.0000004 C30.9138558,49.5907519 31.3978252,50.0696507 31.9999986,50.0696507 L69,50.0696502" id="Rectangle-37" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(34.499999, 41.500000) scale(-1, 1) translate(-34.499999, -41.500000) "></path>
+                        <ellipse id="Oval-7" fill="#4A4A4A" cx="131" cy="18" rx="2" ry="2"></ellipse>
+                    </g>
+                    <g id="TV" transform="translate(0.000000, 12.000000)" stroke="#4A4A4A" stroke-width="2">
+                        <rect id="Rectangle-41" x="0" y="0" width="89" height="61" rx="4.31067961"></rect>
+                        <path d="M45,61.1956522 L45,69.8043478" id="Line" stroke-linecap="square"></path>
+                        <path d="M13.8888889,71 L76.1365017,71" id="Line" stroke-linecap="round"></path>
+                        <rect id="Rectangle-41" x="8" y="6" width="74" height="48" rx="1.0776699"></rect>
+                        <path d="M57,55 C57,41.1928813 68.1928813,30 82,30 L82,30" id="Rectangle-41"></path>
+                        <path d="M58,32 L47,21" id="Line" stroke-linecap="round"></path>
+                        <path d="M53,43 L40,40" id="Line" stroke-linecap="round"></path>
+                        <path d="M68,25 L63,13" id="Line" stroke-linecap="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -58,6 +58,11 @@
           height: 0;
         }
       }
+      &--active {
+        &:after {
+          opacity: 1;
+        }
+      }
     }
   }
 }

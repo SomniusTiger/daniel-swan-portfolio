@@ -12,6 +12,13 @@
         &:nth-child(even) {
           padding-left: 20px;
         }
+        &--fullwidth {
+          float: none;
+          width: 100%;
+        }
+      }
+      &-ehog_diagram {
+        margin: 100px auto 0;
       }
     }
   }
