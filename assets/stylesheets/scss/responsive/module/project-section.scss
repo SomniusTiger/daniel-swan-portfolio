@@ -1,4 +1,13 @@
 // Responsive styles for the project sections on project pages
+@media screen and (min-width: 600px) {
+  .project-section {
+    &-images {
+      &-third {
+        width: 49%;
+      }
+    }
+  }
+}
 @media screen and (min-width: 700px) {
   .project-section {
     &-text {
@@ -19,6 +28,15 @@
       }
       &-ehog_diagram {
         margin: 100px auto 0;
+      }
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  .project-section {
+    &-images {
+      &-third {
+        width: 33%;
       }
     }
   }

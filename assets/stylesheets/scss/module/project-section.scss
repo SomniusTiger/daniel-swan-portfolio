@@ -36,4 +36,18 @@
       width: 100%;
     }
   }
+  &-images {
+    @include clearfix();
+    margin: 0 -15px;
+    text-align: center;
+    &-third {
+      display: inline-block;
+      max-width: 387px;
+      padding: 30px 15px 0;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
