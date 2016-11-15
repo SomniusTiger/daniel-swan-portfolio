@@ -62,4 +62,12 @@ footer {
       }
     }
   }
+  &.footer--project {
+    border-top: solid 1px $grey-lighter;
+    max-width: none;
+    width: 100%;
+    .container {
+      max-width: 980px;
+    }
+  }
 }
