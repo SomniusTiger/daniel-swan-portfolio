@@ -1,0 +1,37 @@
+// Navigation between projects
+.project-nav {
+  @include clearfix();
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 20px 20px 70px;
+  width: 100%;
+  &-left, &-right {
+    border: solid 1px $grey-lighter;
+    border-radius: 3px;
+  }
+  &-left {
+    float: left;
+  }
+  &-right {
+    float: right;
+  }
+  a {
+    color: $black;
+    display: inline-block;
+    padding: 25px;
+    text-decoration: none;
+  }
+  &-heading {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+  &-title {
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}
