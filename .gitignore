@@ -3,3 +3,5 @@ node_modules/
 .sass-cache/
 assets/stylesheets/css/
 assets/javascript/dist/
+assets/fonts/icon-font.*
+assets/stylesheets/scss/base/_icon-font.scss
