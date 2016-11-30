@@ -5,21 +5,44 @@
   max-width: 1440px;
   padding: 20px 20px 70px;
   width: 100%;
-  &-left, &-right {
+  a {
+    @include clearfix();
+    @include transition(border-color $speed $ease);
     border: solid 1px $grey-lighter;
     border-radius: 3px;
+    color: $black;
+    display: block;
+    padding: 25px 10px;
+    text-decoration: none;
+    &:hover {
+      border-color: transparent;
+    }
   }
   &-left {
     float: left;
+    a {
+      padding-right: 25px;
+    }
   }
   &-right {
     float: right;
+    a {
+      padding-left: 25px;
+    }
   }
-  a {
-    color: $black;
-    display: inline-block;
-    padding: 25px;
-    text-decoration: none;
+  &-text {
+    float: left;
+  }
+  .icon {
+    display: block;
+    float: left;
+    font-size: 50px;
+    margin-bottom: -13px;
+    position: relative;
+    top: -7px;
+    &:before {
+      vertical-align: top;
+    }
   }
   &-heading {
     display: block;
