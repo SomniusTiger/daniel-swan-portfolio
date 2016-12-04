@@ -1,15 +1,24 @@
 // Responsive styles for navigation between projects
 @media screen and (min-width: 520px) {
   .project-nav {
-    &-download {
-      // left: 50%;
-      // margin-left: -180px;
-      // position: absolute;
+    .icon {
+      font-size: 50px;
+    }
+    a {
+      padding: 20px;
     }
     &-left, &-right {
       .project-nav-title, .project-nav-heading {
         display: block;
       }
+    }
+    &-heading {
+      font-size: 15px;
+      line-height: 15px;
+    }
+    &-title {
+      font-size: 20px;
+      line-height: 20px;
     }
   }
 }
@@ -18,6 +27,7 @@
     &-download {
       left: 50%;
       margin-left: -180px;
+      max-width: 360px;
       position: absolute;
       a {
         margin: 0;

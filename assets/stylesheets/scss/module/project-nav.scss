@@ -11,43 +11,33 @@
     border-radius: 3px;
     color: $black;
     display: block;
-    padding: 25px 10px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
   }
   .icon {
-    display: block;
-    float: left;
-    font-size: 50px;
-    margin-bottom: -13px;
+    display: inline-block;
+    font-size: 20px;
     position: relative;
-    top: -7px;
+    vertical-align: middle;
     &:before {
       vertical-align: top;
     }
   }
   &-left, &-right {
     margin-top: 20px;
-    .project-nav-heading, .project-nav-title {
-      display: none;
-    }
   }
   &-left {
     float: left;
-    a {
-      padding-right: 25px;
-    }
   }
   &-right {
     float: right;
-    a {
-      padding-left: 25px;
-    }
   }
   &-download {
     width: 100%;
     .icon {
       margin-right: 15px;
+      font-size: 30px;
     }
     a {
       background-color: $energy-hog;
@@ -55,33 +45,25 @@
       color: $white;
       margin: 0 auto;
       max-width: 360px;
-      // padding: 25px ;
       width: 100%;
-    }
-    .project-nav-text, .icon {
-      display: inline-block;
-      float: none;
-      vertical-align: middle;
-    }
-    .project-nav-heading, .project-nav-title {
-
     }
   }
   &-text {
-    float: left;
+    display: inline-block;
     text-align: left;
+    vertical-align: middle;
   }
   &-heading {
     display: block;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: bold;
-    line-height: 15px;
+    line-height: 10px;
     text-transform: uppercase;
   }
   &-title {
     display: block;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 12px;
+    line-height: 12px;
     text-transform: uppercase;
   }
 }
