@@ -7,15 +7,29 @@
   width: 100%;
   a {
     @include clearfix();
-    @include transition(border-color $speed $ease);
     border: solid 1px $grey-lighter;
     border-radius: 3px;
     color: $black;
     display: block;
     padding: 25px 10px;
+    text-align: center;
     text-decoration: none;
-    &:hover {
-      border-color: transparent;
+  }
+  .icon {
+    display: block;
+    float: left;
+    font-size: 50px;
+    margin-bottom: -13px;
+    position: relative;
+    top: -7px;
+    &:before {
+      vertical-align: top;
+    }
+  }
+  &-left, &-right {
+    margin-top: 20px;
+    .project-nav-heading, .project-nav-title {
+      display: none;
     }
   }
   &-left {
@@ -30,19 +44,32 @@
       padding-left: 25px;
     }
   }
+  &-download {
+    width: 100%;
+    .icon {
+      margin-right: 15px;
+    }
+    a {
+      background-color: $energy-hog;
+      border: none;
+      color: $white;
+      margin: 0 auto;
+      max-width: 360px;
+      // padding: 25px ;
+      width: 100%;
+    }
+    .project-nav-text, .icon {
+      display: inline-block;
+      float: none;
+      vertical-align: middle;
+    }
+    .project-nav-heading, .project-nav-title {
+
+    }
+  }
   &-text {
     float: left;
-  }
-  .icon {
-    display: block;
-    float: left;
-    font-size: 50px;
-    margin-bottom: -13px;
-    position: relative;
-    top: -7px;
-    &:before {
-      vertical-align: top;
-    }
+    text-align: left;
   }
   &-heading {
     display: block;
