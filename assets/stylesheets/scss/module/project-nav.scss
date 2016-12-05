@@ -7,6 +7,7 @@
   width: 100%;
   a {
     @include clearfix();
+    @include transition(background-color $speed $ease);
     border: solid 1px $grey-lighter;
     border-radius: 3px;
     color: $black;
@@ -14,6 +15,9 @@
     padding: 10px;
     text-align: center;
     text-decoration: none;
+    &:hover {
+      background-color: $grey-lighter;
+    }
   }
   .icon {
     display: inline-block;
@@ -40,12 +44,31 @@
       font-size: 30px;
     }
     a {
-      background-color: $energy-hog;
+      background-color: $red;
       border: none;
       color: $white;
       margin: 0 auto;
       max-width: 360px;
       width: 100%;
+      &:hover {
+        background-color: lighten($red, 10%);
+      }
+    }
+    &--energy_hog {
+      a {
+        background-color: $energy-hog;
+        &:hover {
+          background-color: lighten($energy-hog, 10%);
+        }
+      }
+    }
+    &--creative_mornings {
+      a {
+        background-color: $creative-mornings;
+        &:hover {
+          background-color: lighten($creative-mornings, 10%);
+        }
+      }
     }
   }
   &-text {
