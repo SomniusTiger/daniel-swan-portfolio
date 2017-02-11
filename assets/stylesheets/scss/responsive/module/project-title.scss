@@ -24,3 +24,11 @@
     }
   }
 }
+
+@media screen and (min-width: 900px) {
+  .project-title--full {
+    .project-title-logo {
+      width: 300px;
+    }
+  }
+}
