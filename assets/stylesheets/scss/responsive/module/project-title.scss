@@ -11,6 +11,14 @@
       padding-top: 0;
       width: calc(100% - 100px);
     }
+    &--full {
+      .project-title-logo {
+        margin-bottom: 0;
+      }
+      .project-title-text {
+        padding: 0 20px 0 40px;
+      }
+    }
   }
 }
 
@@ -18,10 +26,15 @@
   .project-title {
     &-logo {
       width: 164px;
+
     }
     &-text {
       width: calc(100% - 164px);
     }
+  }
+  .sprinkle-bg {
+    background-size: 207px 255px;
+    background-position: 103% -100%;
   }
 }
 
@@ -29,6 +42,10 @@
   .project-title--full {
     .project-title-logo {
       width: 300px;
+      &--desktop-only {
+        display: block;
+      }
     }
   }
+
 }

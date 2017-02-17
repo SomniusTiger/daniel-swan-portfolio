@@ -10,6 +10,9 @@
       display: block;
       width: 100%;
     }
+    &--desktop-only {
+      display: none;
+    }
   }
   &-text {
     padding-top: 20px;
@@ -46,16 +49,8 @@
     }
   }
 }
-
-@media screen and (min-width: 480px) {
-  .project-title {
-    &--full {
-      .project-title-logo {
-        margin-bottom: 0;
-      }
-      .project-title-text {
-        padding: 0 20px 0 40px;
-      }
-    }
-  }
+.sprinkle-bg {
+  background-position: 105% -7%;
+  background-repeat: no-repeat;
+  background-size: 102px 126px;
 }

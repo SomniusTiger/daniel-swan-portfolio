@@ -1,0 +1,16 @@
+// Responsive styles for special image divs on project pages
+@media screen and (min-width: 800px) {
+  .project-images {
+    &-title {
+      height: 54px;
+      width: 260px;
+      h3 {
+        font-size: 29px;
+        padding: 15px 30px 15px;
+      }
+    }
+    &-image--half {
+      width: 50%;
+    }
+  }
+}
