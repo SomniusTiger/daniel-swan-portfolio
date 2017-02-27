@@ -4,6 +4,9 @@
   &--dark {
     background-color: $whitish;
   }
+  &--gold {
+    background-color: $greatest-hotels;
+  }
 
   &-title {
     font-size: 24px;
@@ -12,6 +15,9 @@
     text-transform: uppercase;
     &--big {
       font-size: 29px;
+    }
+    &--white {
+      color: $white;
     }
   }
   &-text {
@@ -27,6 +33,9 @@
       }
       &--fullwidth {
         max-width: none;
+      }
+      &--white {
+        color: $white;
       }
     }
     &-ehog-diagram {
@@ -48,6 +57,37 @@
       img {
         width: 100%;
       }
+    }
+  }
+  &-persona {
+    margin-top: 30px;
+    width: 100%;
+    &-attributes {
+      @include clearfix();
+    }
+    &-silhouette {
+      display: block;
+      height: 67px;
+      margin: 0 0 10px;
+      width: 67px;
+    }
+    &-description {
+      display: inline-block;
+      margin-bottom: 20px;
+      width: 100%;
+      ul {
+        li {
+          font-size: 11px;
+          font-weight: bold;
+          line-height: 14px;
+          text-transform: uppercase;
+          margin-bottom: 4px;
+        }
+      }
+    }
+    &-needs {
+      font-size: 15px;
+      line-height: 24px;
     }
   }
 }
