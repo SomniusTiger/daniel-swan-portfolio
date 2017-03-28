@@ -88,7 +88,69 @@ module.exports = function(grunt) {
           'assets/javascript/dist/master.min.js': ['assets/javascript/dist/master.concat.js']
         }
       }
-    }
+    },
+
+    realFavicon: {
+  		favicons: {
+        src: 'assets/images/favicons/master/master.png',
+        dest: 'assets/images/favicons/dest/',
+        options: {
+          iconsPath: 'assets/images/favicons/dest/',
+          html: [ 'index.html', 'creative-mornings/*.html', 'energy-hog/*.html', 'greatest-hotels/*.html' ],
+  				design: {
+  					ios: {
+  						pictureAspect: 'backgroundAndMargin',
+  						backgroundColor: '#ffffff',
+  						margin: '14%',
+  						assets: {
+  							ios6AndPriorIcons: false,
+  							ios7AndLaterIcons: false,
+  							precomposedIcons: false,
+  							declareOnlyDefaultIcon: true
+  						}
+  					},
+  					desktopBrowser: {},
+  					windows: {
+  						pictureAspect: 'noChange',
+  						backgroundColor: '#da532c',
+  						onConflict: 'override',
+  						assets: {
+  							windows80Ie10Tile: false,
+  							windows10Ie11EdgeTiles: {
+  								small: false,
+  								medium: true,
+  								big: false,
+  								rectangle: false
+  							}
+  						}
+  					},
+  					androidChrome: {
+  						pictureAspect: 'noChange',
+  						themeColor: '#ffffff',
+  						manifest: {
+  							display: 'standalone',
+  							orientation: 'notSet',
+  							onConflict: 'override',
+  							declared: true
+  						},
+  						assets: {
+  							legacyIcon: false,
+  							lowResolutionIcons: false
+  						}
+  					},
+  					safariPinnedTab: {
+  						pictureAspect: 'blackAndWhite',
+  						threshold: 95.3125,
+  						themeColor: '#5bbad5'
+  					}
+  				},
+  				settings: {
+  					scalingAlgorithm: 'Mitchell',
+  					errorOnImageTooSmall: false
+  				}
+  			}
+  		}
+  	}
 
   });
 
@@ -99,6 +161,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-real-favicon');
 
-  grunt.registerTask('default', ['webfont', 'clean', 'sass', 'cssmin', 'concat', 'uglify']);
+  grunt.registerTask('default', ['webfont', 'clean', 'sass', 'cssmin', 'concat', 'uglify', 'realFavicon']);
 };
