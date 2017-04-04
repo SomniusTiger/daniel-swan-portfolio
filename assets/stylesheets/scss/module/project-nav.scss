@@ -70,6 +70,14 @@
         }
       }
     }
+    &--greatest_hotels {
+      a {
+        background-color: $greatest-hotels;
+        &:hover {
+          background-color: lighten($greatest-hotels, 10%);
+        }
+      }
+    }
   }
   &-text {
     display: inline-block;
