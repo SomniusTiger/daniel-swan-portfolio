@@ -163,5 +163,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-real-favicon');
 
-  grunt.registerTask('default', ['webfont', 'clean', 'sass', 'cssmin', 'concat', 'uglify', 'realFavicon']);
+  grunt.registerTask('default', ['webfont', 'clean', 'sass', 'cssmin', 'concat', 'uglify']);
 };
