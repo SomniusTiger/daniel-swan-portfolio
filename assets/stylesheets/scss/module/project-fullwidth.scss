@@ -6,10 +6,9 @@
   position: relative;
   width: 100%;
   &-text {
-    display: table;
-    height: 100%;
-    max-width: 150px;
+    display: table-cell;
     vertical-align: middle;
+    width: 100%;
     h3 {
       color: $white;
       font-size: 28px;
@@ -23,45 +22,49 @@
       line-height: 16px;
       vertical-align: middle;
     }
+    &-inner {
+      max-width: 120px;
+    }
   }
   &-link {
-    display: table-cell;
+    display: table;
+    height: 100%;
     text-decoration: none;
     vertical-align: middle;
     width: 100%;
   }
   &--left {
     background-position: 60%;
-    .project-fullwidth-text {
-      padding-left: 30px;
+    .project-fullwidth-text-inner {
+      margin-left: 30px;
     }
   }
   &--right {
     background-position: 40%;
-    .project-fullwidth-text {
+    .project-fullwidth-text-inner {
       float: right;
-      padding-right: 30px;
+      margin-right: 30px;
     }
   }
   &--energy-hog {
     background-position: 60%;
-    .project-fullwidth-text {
-      padding-left: 30px;
+    .project-fullwidth-text-inner {
+      margin-left: 30px;
     }
   }
   &--greatest-hotels {
     background-position: 40%;
-    .project-fullwidth-text {
+    .project-fullwidth-text-inner {
       float: right;
+      margin-right: 50px;
       padding-bottom: 130px;
-      padding-right: 30px;
     }
   }
   &--creative-mornings {
     background-position: 45%;
-    .project-fullwidth-text {
+    .project-fullwidth-text-inner {
       float: left;
-      padding-left: 30px;
+      margin-left: 30px;
       h3, p {
         color: $black;
       }
@@ -69,24 +72,24 @@
   }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 400px) {
   .project-fullwidth {
     &--energy-hog {
       background-position: 65%;
-      .project-fullwidth-text {
-        padding-left: 60px;
+      .project-fullwidth-text-inner {
+        margin-left: 60px;
       }
     }
     &--greatest-hotels {
       background-position: 35%;
-      .project-fullwidth-text {
-        padding-right: 60px;
+      .project-fullwidth-text-inner {
+        margin-right: 60px;
       }
     }
     &--creative-mornings {
       background-position: 50%;
-      .project-fullwidth-text {
-        padding-left: 60px;
+      .project-fullwidth-text-inner {
+        margin-left: 60px;
       }
     }
   }
@@ -94,7 +97,7 @@
 
 @media screen and (min-width: 540px) {
   .project-fullwidth {
-    &-text {
+    &-text-inner {
       max-width: 250px;
     }
   }
@@ -102,25 +105,22 @@
 
 @media screen and (min-width: 640px) {
   .project-fullwidth {
-    &-text {
-      max-width: 350px;
-    }
     &--energy-hog {
       background-position: 65%;
-      .project-fullwidth-text {
-        padding-left: 60px;
+      .project-fullwidth-text-inner {
+        margin-left: 60px;
       }
     }
     &--greatest-hotels {
       background-position: 35%;
-      .project-fullwidth-text {
-        padding-right: 60px;
+      .project-fullwidth-text-inner {
+        margin-right: 60px;
       }
     }
     &--creative-mornings {
       background-position: 50%;
-      .project-fullwidth-text {
-        padding-left: 60px;
+      .project-fullwidth-text-inner {
+        margin-left: 60px;
       }
     }
   }
@@ -128,22 +128,19 @@
 
 @media screen and (min-width: 740px) {
   .project-fullwidth {
-    &-text {
-      max-width: 55%;
-    }
     &--energy-hog {
-      .project-fullwidth-text {
-        padding-left: 25%;
+      .project-fullwidth-text-inner {
+        margin-left: 25%;
       }
     }
     &--greatest-hotels {
-      .project-fullwidth-text {
-        padding-right: 20%;
+      .project-fullwidth-text-inner {
+        margin-right: 20%;
       }
     }
     &--creative-mornings {
-      .project-fullwidth-text {
-        padding-left: 20%;
+      .project-fullwidth-text-inner {
+        margin-left: 20%;
       }
     }
   }
@@ -151,9 +148,12 @@
 
 @media screen and (min-width: 1200px) {
   .project-fullwidth {
-    max-height: 800px;
     height: 100%;
+    max-height: 800px;
     &-text {
+      &-inner {
+        max-width: 550px;
+      }
       h3 {
         font-size: 58px;
         line-height: 60px;
@@ -164,23 +164,20 @@
       }
     }
     &--energy-hog {
-      .project-fullwidth-text {
+      .project-fullwidth-text-inner {
         margin-left: 15%;
         padding-left: 0;
       }
     }
     &--greatest-hotels {
-      .project-fullwidth-text {
+      .project-fullwidth-text-inner {
         margin-right: 15%;
-        padding-bottom: 0;
+        padding-bottom: 20%;
         padding-right: 0;
-      }
-      .project-fullwidth-link {
-        padding-bottom: 50%;
       }
     }
     &--creative-mornings {
-      .project-fullwidth-text {
+      .project-fullwidth-text-inner {
         margin-left: 15%;
         max-width: 360px;
         padding-left: 0;

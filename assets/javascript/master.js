@@ -44,7 +44,7 @@ var dnlswan = new function() {
     if (typeof(workAnchor) != 'undefined' && workAnchor != null) {
       workAnchor.onclick = function(evt) {
         evt.preventDefault();
-        var destination = document.querySelector('section.projects').getBoundingClientRect().top;
+        var destination = document.getElementById('work').getBoundingClientRect().top;
         self.scrollTo(document.body, destination, speed);
       }
     }

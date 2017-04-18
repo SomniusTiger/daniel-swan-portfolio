@@ -1,7 +1,7 @@
 // Styles for the project square container
 .projects {
   background-color: $grey-light;
-  height: 100%;
+  height: auto;
   position: relative;
   width: 100%;
 }
@@ -10,4 +10,10 @@
   border-bottom: solid 1px $white;
   border-right: solid 1px $white;
   width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .projects {
+    height: 100%;
+  }
 }
