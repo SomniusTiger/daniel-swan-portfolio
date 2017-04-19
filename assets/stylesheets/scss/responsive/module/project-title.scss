@@ -1,15 +1,24 @@
 // Responsive project title styles
 @media screen and (min-width: 480px) {
   .project-title {
+    &-wrap {
+      display: table;
+    }
     &-logo {
-      float: left;
+      display: table-cell;
+      vertical-align: middle;
       width: 100px;
     }
     &-text {
-      float: left;
+      display: table-cell;
       padding-left: 30px;
       padding-top: 0;
+      vertical-align: middle;
       width: calc(100% - 100px);
+      h1, h2, p {
+        max-width: 500px;
+        width: 100%;
+      }
     }
     &--full {
       .project-title-logo {
@@ -43,7 +52,7 @@
     .project-title-logo {
       width: 300px;
       &--desktop-only {
-        display: block;
+        // display: block;
       }
     }
   }
