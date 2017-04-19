@@ -3,6 +3,14 @@
   @include clearfix();
   padding: 40px 24px;
   width: 100%;
+  &--pink {
+    background-color: $energy-hog-dark;
+    color: $white;
+    .project-title-tags {
+      color: $white;
+    }
+  }
+
   &-wrap {
     width: 100%;
   }
