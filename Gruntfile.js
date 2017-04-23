@@ -96,7 +96,7 @@ module.exports = function(grunt) {
         dest: 'assets/images/favicons/dest/',
         options: {
           iconsPath: 'assets/images/favicons/dest/',
-          html: [ 'index.html', 'creative-mornings/*.html', 'energy-hog/*.html', 'greatest-hotels/*.html' ],
+          html: [ 'index.html', 'creative-mornings/index.html', 'energy-hog/index.html', 'greatest-hotels/index.html' ],
   				design: {
   					ios: {
   						pictureAspect: 'backgroundAndMargin',
