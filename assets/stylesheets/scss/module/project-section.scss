@@ -89,3 +89,95 @@
     }
   }
 }
+
+@media screen and (min-width: 480px) {
+  .project-section {
+    &-persona {
+      &-silhouette {
+        float: left;
+        display: inline-block;
+        margin-right: 30px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  .project-section {
+    &-images {
+      &-third {
+        width: 49%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 700px) {
+  .project-section {
+    &-text {
+      @include clearfix();
+      &-p {
+        float: left;
+        width: 50%;
+        &:nth-child(odd) {
+          padding-right: 20px;
+        }
+        &:nth-child(even) {
+          padding-left: 20px;
+        }
+        &--fullwidth {
+          float: none;
+          width: 100%;
+        }
+      }
+      &-ehog_diagram {
+        margin: 100px auto 0;
+      }
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  .project-section {
+    &-images {
+      &-third {
+        width: 33%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 920px) {
+  .project-section {
+    &-persona {
+      @include clearfix();
+      &-attributes {
+        float: left;
+        width: 439px;
+      }
+      &-silhouette {
+        margin-bottom: 0;
+      }
+      &-description {
+        margin-bottom: 0;
+      }
+      &-needs {
+        float: left;
+        padding-left: 30px;
+        width: calc(100% - 439px);
+      }
+    }
+  }
+}
+@media screen and (min-width: 1140px) {
+  .project-section {
+    &-persona {
+      @include clearfix();
+      &-attributes {
+        float: left;
+        width: 40%;
+      }
+      &-needs {
+        float: left;
+        padding-left: 30px;
+        width: 60%;
+      }
+    }
+  }
+}

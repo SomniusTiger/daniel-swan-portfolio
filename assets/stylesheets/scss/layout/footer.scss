@@ -71,3 +71,32 @@ footer {
     }
   }
 }
+
+@media screen and (min-width: 640px) {
+  footer {
+    @include clearfix();
+    padding: 45px 20px;
+    text-align: left;
+    .contact {
+      float: left;
+      &-info {
+        &-email, &-phone {
+          display: inline-block;
+        }
+        &-email {
+          margin-right: 20px;
+        }
+      }
+    }
+    .social {
+      float: right;
+      &-networks {
+        li {
+          span[class^="icon-"]:before {
+            margin: 0 24px 0 0;
+          }
+        }
+      }
+    }
+  }
+}

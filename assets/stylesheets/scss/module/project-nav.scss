@@ -98,3 +98,43 @@
     text-transform: uppercase;
   }
 }
+
+@media screen and (min-width: 520px) {
+  .project-nav {
+    .icon {
+      font-size: 50px;
+    }
+    a {
+      padding: 20px;
+    }
+    &-left, &-right {
+      .project-nav-title, .project-nav-heading {
+        display: block;
+      }
+    }
+    &-heading {
+      font-size: 15px;
+      line-height: 15px;
+    }
+    &-title {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
+@media screen and (min-width: 880px) {
+  .project-nav {
+    &-download {
+      left: 50%;
+      margin-left: -180px;
+      max-width: 360px;
+      position: absolute;
+      a {
+        margin: 0;
+      }
+    }
+    &-left, &-right {
+      margin-top: 0;
+    }
+  }
+}

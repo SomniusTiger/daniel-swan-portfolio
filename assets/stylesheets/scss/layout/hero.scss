@@ -64,3 +64,21 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    &-text {
+      .icon-danny-face {
+        font-size: 130px;
+      }
+      &-title {
+        font-size: 53px;
+        margin: 40px 0 30px;
+      }
+      &-description {
+        font-size: 27px;
+        line-height: 37px;
+      }
+    }
+  }
+}
