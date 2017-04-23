@@ -83,6 +83,9 @@
     display: inline-block;
     text-align: left;
     vertical-align: middle;
+    span {
+      max-width: 90px;
+    }
   }
   &-heading {
     display: block;
@@ -119,6 +122,11 @@
     &-title {
       font-size: 20px;
       line-height: 20px;
+    }
+    &-text {
+      span {
+        max-width: 141px;
+      }
     }
   }
 }
