@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="143px" height="164px" viewBox="0 0 143 164" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
-    <title>Logo 2</title>
+<svg width="164px" height="164px" viewBox="0 0 164 164" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo@1x</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Greatest-Hotels" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Greatest-Hotels-Case-Study" transform="translate(-162.000000, -807.000000)">
-            <g id="Title" transform="translate(151.000000, 807.000000)">
-                <g id="Logo-2" transform="translate(11.000000, 0.000000)">
-                    <polygon id="Fill-1" fill="#323A39" points="113.426735 140 142.029999 123.570607 142.029999 41.42775 113.426735 25"></polygon>
-                    <polygon id="Fill-2" fill="#323A39" points="0 41.4284541 0 123.570724 28.6032636 140 28.6032636 25"></polygon>
-                    <polygon id="Fill-3" fill="#DBB728" points="57.2065273 155.767127 71.5081591 164 85.8097909 155.767127 85.8097909 103.660453 57.2065273 94"></polygon>
-                    <polygon id="Fill-4" fill="#DBB728" points="71.5081591 0 57.2065273 8.23296951 57.2065273 60.3402569 85.8097909 70 85.8097909 8.23296951"></polygon>
+        <g id="Greatest-Hotels-Case-Study" transform="translate(-151.000000, -807.000000)">
+            <g id="Title" transform="translate(0.000000, 765.000000)">
+                <g id="Logo" transform="translate(151.000000, 42.000000)">
+                    <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="164" height="164" rx="37"></rect>
+                    <polygon id="Fill-1" fill="#323A39" points="115.424111 127.97561 138.226712 114.952311 138.226712 49.8390701 115.424111 36.8170732"></polygon>
+                    <polygon id="Fill-2" fill="#323A39" points="25 49.8396282 25 114.952404 47.8026018 127.97561 47.8026018 36.8170732"></polygon>
+                    <polygon id="Fill-3" fill="#DBB728" points="70.6052036 140.473942 82.0065045 147 93.4078054 140.473942 93.4078054 99.1698711 70.6052036 91.5121951"></polygon>
+                    <polygon id="Fill-4" fill="#DBB728" points="82.0065045 17 70.6052036 23.5261344 70.6052036 64.8306914 93.4078054 72.4878049 93.4078054 23.5261344"></polygon>
                 </g>
             </g>
         </g>

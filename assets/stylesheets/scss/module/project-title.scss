@@ -10,6 +10,13 @@
       color: $white;
     }
   }
+  &--gold {
+    background-color: $greatest-hotels;
+    color: $white;
+    .project-title-tags {
+      color: $white;
+    }
+  }
 
   &-wrap {
     width: 100%;
