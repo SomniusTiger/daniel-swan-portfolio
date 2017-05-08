@@ -18,6 +18,7 @@ footer {
   }
   .contact {
     margin-bottom: 30px;
+    text-align: left;
     &-info {
       display: inline-block;
       margin: 0 auto;
@@ -44,15 +45,21 @@ footer {
       margin-right: 10px;
       vertical-align: baseline;
     }
+    span.icon-phone {
+      &:before {
+        margin-left: -4px;
+      }
+    }
   }
   .social {
+    text-align: left;
     &-networks {
       li {
         display: inline-block;
         span[class^="icon-"]:before {
           font-size: 25px;
           line-height: 25px;
-          margin: 0 12px;
+          margin: 0 24px 0 0;
           vertical-align: baseline;
         }
         .dribbble:hover {   color: $dribbble-color; }
