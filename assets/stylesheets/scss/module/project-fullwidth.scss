@@ -45,6 +45,8 @@
     .project-fullwidth-text-inner {
       float: right;
       margin-right: 30px;
+      max-width: 150px;
+      text-align: right;
     }
   }
   &--energy-hog {
@@ -59,7 +61,6 @@
       float: right;
       margin-right: 30px;
       max-width: 150px;
-      padding-bottom: 110px;
       text-align: right;
     }
   }
@@ -68,9 +69,6 @@
     .project-fullwidth-text-inner {
       float: left;
       margin-left: 30px;
-      h3, p {
-        color: $black;
-      }
     }
   }
 }
@@ -182,7 +180,6 @@
       .project-fullwidth-text-inner {
         margin-right: 9%;
         max-width: 570px;
-        padding-bottom: 10%;
         padding-right: 0;
       }
     }
