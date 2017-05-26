@@ -1,8 +1,59 @@
 // Project sections on project pages
 .project-section {
-  padding: 50px 24px;
+  @include clearfix;
+  padding: 160px 24px;
   &--dark {
     background-color: $whitish;
+  }
+  &--pink {
+    background-color: $energy-hog-dark;
+    color: $white;
+  }
+  &--less_padding {
+    padding: 80px 24px;
+  }
+  &--product {
+    &--energy_hog {
+      background-color: $energy-hog-dark;
+      padding: 0;
+      position: relative;
+      .project-section-fg_image {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: 0;
+        height: 500px;
+        left: 0;
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+      }
+      .project-section-bg_image {
+        background-position: center;
+        background-repeat: repeat;
+        background-size: 100px 100px;
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        opacity: 0.05;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+      }
+    }
+  }
+
+  &-item {
+    img {
+      width: 100%;
+    }
+    &.project-section-text {
+      margin-top: 40px;
+    }
   }
 
   &-title {
@@ -16,12 +67,16 @@
     &--white {
       color: $white;
     }
+    &--b_margin {
+      margin-bottom: 30px;
+    }
   }
+
   &-text {
     margin: 20px 0 0;
     &-p {
-      font-size: 15px;
-      line-height: 24px;
+      font-size: 17px;
+      line-height: 29px;
       margin-bottom: 20px;
       max-width: 600px;
       width: 100%;
@@ -112,6 +167,13 @@
 }
 @media screen and (min-width: 700px) {
   .project-section {
+    &--product {
+      &--energy_hog {
+        .project-section-fg_image {
+          height: 700px;
+        }
+      }
+    }
     &-text {
       @include clearfix();
       &-p {
@@ -125,7 +187,11 @@
         }
         &--fullwidth {
           float: none;
+          padding: 0;
           width: 100%;
+          &:nth-child(odd), &:nth-child(even) {
+            padding: 0;
+          }
         }
       }
       &-ehog_diagram {
@@ -161,6 +227,29 @@
         float: left;
         padding-left: 30px;
         width: calc(100% - 439px);
+      }
+    }
+  }
+}
+@media screen and (min-width: 1020px) {
+  .project-section {
+    &-item {
+      &--container {
+        display: table;
+      }
+      &--half {
+        display: table-cell;
+        vertical-align: middle;
+        width: 50%;
+        &:first-child {
+          padding-right: 50px;
+        }
+        &:last-child {
+          padding-left: 50px;
+        }
+      }
+      &.project-section-text {
+        margin-top: 0;
       }
     }
   }

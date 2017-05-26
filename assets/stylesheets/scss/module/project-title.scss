@@ -1,7 +1,7 @@
 // The project title on the top of project pages
 .project-title {
   @include clearfix();
-  padding: 40px 24px;
+  padding: 100px 24px;
   width: 100%;
   &--pink {
     background-color: $energy-hog-dark;
@@ -34,25 +34,24 @@
   }
   &-text {
     padding-top: 20px;
-    max-width: 500px;
     width: 100%;
   }
   &-name {
-    font-size: 30px;
+    font-size: 44px;
     font-weight: 900;
     letter-spacing: 0.1em;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     text-transform: uppercase;
   }
   &-tags {
     color: $grey-dark;
     font-size: 16px;
     font-weight: 300;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   p {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 17px;
+    line-height: 29px;
   }
   &--full {
     padding: 30px 0 0;
@@ -90,7 +89,7 @@
       vertical-align: middle;
       width: calc(100% - 100px);
       h1, h2, p {
-        max-width: 500px;
+        max-width: 555px;
         width: 100%;
       }
     }
