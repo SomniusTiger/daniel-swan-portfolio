@@ -1,7 +1,7 @@
 // The project title on the top of project pages
 .project-title {
   @include clearfix();
-  padding: 100px 24px;
+  padding: 60px 24px;
   width: 100%;
   &--pink {
     background-color: $energy-hog-dark;
@@ -22,8 +22,9 @@
     width: 100%;
   }
   &-logo {
-    margin: 0 auto;
-    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
     img {
       display: block;
       width: 100%;
@@ -32,12 +33,22 @@
       display: none;
     }
   }
+  &-text-wrap {
+    display: inline;
+  }
   &-text {
-    padding-top: 20px;
+    display: inline-block;
+    margin-left: 11px;
+    vertical-align: middle;
+    width: calc(100% - 76px);
+  }
+  &-description {
+    display: block;
+    padding-top: 24px;
     width: 100%;
   }
   &-name {
-    font-size: 44px;
+    font-size: 28px;
     font-weight: 900;
     letter-spacing: 0.1em;
     margin-bottom: 7px;
@@ -47,7 +58,6 @@
     color: $grey-dark;
     font-size: 16px;
     font-weight: 300;
-    margin-bottom: 15px;
   }
   p {
     font-size: 17px;
@@ -72,6 +82,17 @@
   background-size: 102px 126px;
 }
 
+@media screen and (min-width: 360px) {
+  .project-title {
+    &-logo {
+      width: 80px;
+    }
+    &-text {
+      width: calc(100% - 96px);
+    }
+  }
+}
+
 @media screen and (min-width: 480px) {
   .project-title {
     &-wrap {
@@ -83,6 +104,10 @@
       width: 100px;
     }
     &-text {
+      margin-left: 0;
+      width: auto;
+    }
+    &-text-wrap {
       display: table-cell;
       padding-left: 30px;
       padding-top: 0;
@@ -121,6 +146,12 @@
 }
 
 @media screen and (min-width: 900px) {
+  .project-title {
+    padding: 100px 24px;
+    &-name {
+      font-size: 44px;
+    }
+  }
   .project-title--full {
     .project-title-logo {
       width: 300px;
