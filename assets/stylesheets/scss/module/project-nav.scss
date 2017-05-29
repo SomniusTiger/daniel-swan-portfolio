@@ -2,17 +2,16 @@
 .project-nav {
   @include clearfix();
   margin: 0 auto;
-  max-width: 1440px;
-  padding: 20px 20px 70px;
+  // max-width: 1440px;
+  padding: 20px 0 0;
   width: 100%;
   a {
     @include clearfix();
     @include transition(background-color $speed $ease);
-    border: solid 1px $grey-lighter;
-    border-radius: 3px;
+    border-top: solid 1px $grey-lighter;
     color: $black;
     display: block;
-    padding: 10px;
+    padding: 52px 25px 54px;
     text-align: center;
     text-decoration: none;
     &:hover {
@@ -21,34 +20,50 @@
   }
   .icon {
     display: inline-block;
-    font-size: 20px;
+    font-size: 44px;
     position: relative;
+    width: 40px;
     vertical-align: middle;
-    &:before {
-      vertical-align: top;
+    img {
+      width: 100%;
     }
   }
   &-left, &-right {
-    margin-top: 20px;
+    width: 100%;
   }
   &-left {
-    float: left;
+    .project-nav-text {
+      float: right;
+      margin-top: 4px;
+      text-align: right;
+    }
+    .icon {
+      float: left;
+      margin-left: -10px;
+    }
   }
   &-right {
-    float: right;
+    .project-nav-text {
+      float: left;
+      margin-top: 4px;
+      text-align: left;
+    }
+    .icon {
+      float: right;
+      margin-right: -10px;
+    }
   }
   &-download {
     width: 100%;
-    .icon {
-      margin-right: 15px;
-      font-size: 30px;
+    .project-nav-text {
+      margin-left: 14px;
     }
     a {
       background-color: $red;
       border: none;
       color: $white;
       margin: 0 auto;
-      max-width: 360px;
+      padding: 45px 25px 54px;
       width: 100%;
       &:hover {
         background-color: lighten($red, 10%);
@@ -56,9 +71,9 @@
     }
     &--energy_hog {
       a {
-        background-color: $energy-hog;
+        background-color: $energy-hog-dark;
         &:hover {
-          background-color: lighten($energy-hog, 10%);
+          background-color: lighten($energy-hog-dark, 10%);
         }
       }
     }
@@ -82,56 +97,31 @@
   &-text {
     display: inline-block;
     text-align: left;
-    vertical-align: middle;
-    span {
-      max-width: 90px;
-    }
+    vertical-align: bottom;
   }
   &-heading {
     display: block;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: bold;
-    line-height: 10px;
+    line-height: 1.3em;
     text-transform: uppercase;
   }
   &-title {
     display: block;
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 20px;
+    line-height: 1.3em;
     text-transform: uppercase;
   }
 }
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 960px) {
   .project-nav {
-    .icon {
-      font-size: 50px;
-    }
+    border-top: solid 1px $grey-lighter;
+    margin-bottom: -2px;
+    padding-top: 0;
     a {
-      padding: 20px;
+      max-width: 500px;
     }
-    &-left, &-right {
-      .project-nav-title, .project-nav-heading {
-        display: block;
-      }
-    }
-    &-heading {
-      font-size: 15px;
-      line-height: 15px;
-    }
-    &-title {
-      font-size: 20px;
-      line-height: 20px;
-    }
-    &-text {
-      span {
-        max-width: 141px;
-      }
-    }
-  }
-}
-@media screen and (min-width: 880px) {
-  .project-nav {
     &-download {
       left: 50%;
       margin-left: -180px;
@@ -143,6 +133,19 @@
     }
     &-left, &-right {
       margin-top: 0;
+      width: calc(50% - 180px);
+      a {
+        border: none;
+        display: inline-block;
+        width: 100%;
+      }
+    }
+    &-right {
+      float: right;
+    }
+    &-left {
+      float: left;
+      text-align: right;
     }
   }
 }
