@@ -107,7 +107,6 @@
     }
     &-third {
       display: inline-block;
-      // max-width: 387px;
       padding: 30px 15px 0;
       vertical-align: top;
       width: 100%;
@@ -218,6 +217,11 @@
     padding: 160px 24px;
     &--less_padding {
       padding: 80px 24px;
+    }
+    &--product {
+      &--energy_hog {
+        padding: 0;
+      }
     }
     &-images {
       &-third {
