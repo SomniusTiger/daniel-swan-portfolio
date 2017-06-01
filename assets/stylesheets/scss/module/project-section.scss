@@ -13,36 +13,42 @@
     padding: 60px 24px;
   }
   &--product {
+    padding: 0;
+    position: relative;
+    .project-section-fg_image {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      bottom: 0;
+      height: 500px;
+      left: 0;
+      position: relative;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+    }
+    .project-section-bg_image {
+      background-position: center;
+      background-repeat: repeat;
+      background-size: 200px 200px;
+      bottom: 0;
+      height: 100%;
+      left: 0;
+      opacity: 0.05;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
     &--energy_hog {
       background-color: $energy-hog-dark;
-      padding: 0;
-      position: relative;
+    }
+    &--greatest_hotels {
+      background-color: $greatest-hotels-dark;
       .project-section-fg_image {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        bottom: 0;
-        height: 500px;
-        left: 0;
-        position: relative;
-        right: 0;
-        top: 0;
-        width: 100%;
-        z-index: 2;
-      }
-      .project-section-bg_image {
-        background-position: center;
-        background-repeat: repeat;
-        background-size: 100px 100px;
-        bottom: 0;
-        height: 100%;
-        left: 0;
-        opacity: 0.05;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 100%;
-        z-index: 1;
+        background-size: cover;
       }
     }
   }
@@ -75,6 +81,18 @@
 
   &-text {
     margin: 20px 0 0;
+    &--half {
+      margin-bottom: 40px;
+      width: 100%;
+
+      .project-section-title {
+        margin-bottom: 25px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
     &-p {
       font-size: 17px;
       line-height: 29px;
@@ -96,6 +114,16 @@
       margin: 50px auto 0;
       max-width: 750px;
       width: 100%;
+    }
+  }
+  &-image {
+    display: block;
+    &--half {
+      margin-bottom: 40px;
+      width: 100%;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
   &-images {
@@ -180,9 +208,12 @@
 @media screen and (min-width: 700px) {
   .project-section {
     &--product {
-      &--energy_hog {
+      .project-section-fg_image {
+        height: 700px;
+      }
+      &--greatest_hotels {
         .project-section-fg_image {
-          height: 700px;
+          height: 600px;
         }
       }
     }
@@ -219,8 +250,32 @@
       padding: 80px 24px;
     }
     &--product {
-      &--energy_hog {
-        padding: 0;
+      padding: 0;
+    }
+    &-image {
+      &--half {
+        float: left;
+        margin-bottom: 0;
+        width: 50%;
+        &:nth-child(odd) {
+          padding-right: 50px;
+        }
+        &:nth-child(even) {
+          padding-left: 50px;
+        }
+      }
+    }
+    &-text {
+      &--half {
+        float: left;
+        margin-bottom: 0;
+        width: 50%;
+        &:nth-child(odd) {
+          padding-right: 50px;
+        }
+        &:nth-child(even) {
+          padding-left: 50px;
+        }
       }
     }
     &-images {
