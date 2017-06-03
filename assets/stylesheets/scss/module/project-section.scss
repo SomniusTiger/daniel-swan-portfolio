@@ -2,55 +2,12 @@
 .project-section {
   @include clearfix;
   padding: 60px 24px;
-  &--dark {
-    background-color: $whitish;
-  }
-  &--pink {
-    background-color: $energy-hog-dark;
-    color: $white;
-  }
-  &--less_padding {
-    padding: 60px 24px;
-  }
-  &--product {
-    padding: 0;
-    position: relative;
-    .project-section-fg_image {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      bottom: 0;
-      height: 500px;
-      left: 0;
-      position: relative;
-      right: 0;
-      top: 0;
-      width: 100%;
-      z-index: 2;
-    }
-    .project-section-bg_image {
-      background-position: center;
-      background-repeat: repeat;
-      background-size: 200px 200px;
-      bottom: 0;
-      height: 100%;
-      left: 0;
-      opacity: 0.05;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 100%;
-      z-index: 1;
-    }
-    &--energy_hog {
-      background-color: $energy-hog-dark;
-    }
-    &--greatest_hotels {
-      background-color: $greatest-hotels-dark;
-      .project-section-fg_image {
-        background-size: cover;
-      }
-    }
+
+  &-divider {
+    border-top: solid 1px $grey-light;
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 100%;
   }
 
   &-item {
@@ -118,12 +75,19 @@
   }
   &-image {
     display: block;
+    width: 100%;
+    img {
+      width: 100%;
+    }
     &--half {
       margin-bottom: 40px;
       width: 100%;
       &:last-child {
         margin-bottom: 0;
       }
+    }
+    &--full {
+      margin-top: 30px;
     }
   }
   &-images {
@@ -182,6 +146,107 @@
       font-size: 15px;
       line-height: 24px;
     }
+  }
+
+  &--product {
+    padding: 0;
+    position: relative;
+    .project-section-fg_image {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      bottom: 0;
+      height: 500px;
+      left: 0;
+      position: relative;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+    }
+    .project-section-bg_image {
+      background-position: center;
+      background-repeat: repeat;
+      background-size: 200px 200px;
+      bottom: 0;
+      height: 100%;
+      left: 0;
+      opacity: 0.05;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+    &--energy_hog {
+      background-color: $energy-hog-dark;
+    }
+    &--greatest_hotels {
+      background-color: $greatest-hotels-dark;
+      .project-section-fg_image {
+        background-size: cover;
+      }
+    }
+  }
+
+  &--background {
+    background-color: $grey-lightest;
+    height: 550px;
+    padding: 50px 24px;
+    position: relative;
+
+    .project-section-title {
+      background-color: $grey-darker;
+      color: $white;
+      display: inline-block;
+      padding: 10px 30px;
+      vertical-align: bottom;
+    }
+
+    .project-section-download  {
+      @include transition(background-color $speed $ease);
+      background-color: $grey-darker;
+      color: $white;
+      display: inline-block;
+      padding: 10px 15px;
+      vertical-align: bottom;
+      img {
+        position: relative;
+        top: -2px;
+      }
+      &:hover {
+        background-color: lighten($grey-darker, 10%);
+      }
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+    .bg {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      bottom: 0;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+
+  &--dark {
+    background-color: $whitish;
+  }
+  &--pink {
+    background-color: $energy-hog-dark;
+    color: $white;
+  }
+  &--less_padding {
+    padding: 60px 24px;
   }
 }
 
@@ -251,6 +316,9 @@
     }
     &--product {
       padding: 0;
+    }
+    &--background {
+      padding: 50px 24px;
     }
     &-image {
       &--half {
