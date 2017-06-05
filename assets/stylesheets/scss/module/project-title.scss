@@ -17,6 +17,13 @@
       color: $white;
     }
   }
+  &--pink_light {
+    background-color: $creative-mornings;
+    color: $white;
+    .project-title-tags {
+      color: $white;
+    }
+  }
 
   &-wrap {
     width: 100%;
@@ -48,7 +55,7 @@
     width: 100%;
   }
   &-name {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 900;
     letter-spacing: 0.1em;
     margin-bottom: 7px;
@@ -86,6 +93,9 @@
   .project-title {
     &-logo {
       width: 80px;
+    }
+    &-name {
+      font-size: 28px;
     }
     &-text {
       width: calc(100% - 96px);
