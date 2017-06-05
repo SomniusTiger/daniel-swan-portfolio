@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="164px" height="164px" viewBox="0 0 164 164" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="-2.48949813e-15%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#3490F8" offset="0%"></stop>
+            <stop stop-color="#34B1F8" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="164" height="164" rx="37"></rect>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="-2.48949813e-15%" id="linearGradient-4">
+            <stop stop-color="#3490F8" offset="0%"></stop>
+            <stop stop-color="#1B83F7" offset="100%"></stop>
+        </linearGradient>
+        <path d="M126.823,28 C130.718,34.433 132.474,41.059 132.474,49.429 C132.474,76.125 109.685,110.805 91.189,135.157 L48.943,135.157 L32,33.845 L68.991,30.333 L77.949,102.423 C86.319,88.787 96.648,67.358 96.648,52.748 C96.648,44.751 95.278,39.304 93.137,34.819 L126.823,28 L126.823,28 Z" id="path-5"></path>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Venmo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Venmo-Case-Study" transform="translate(-151.000000, -811.000000)">
+            <g id="Title" transform="translate(0.000000, 693.000000)">
+                <g id="Logo" transform="translate(151.000000, 118.000000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="Rectangle">
+                        <use fill="#3490F8" xlink:href="#path-2"></use>
+                        <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                    </g>
+                    <g id="Abstract-Shapes" opacity="0.100000001" mask="url(#mask-3)">
+                        <g transform="translate(6.066667, -3.600000)">
+                            <polygon id="Triangle" stroke="none" fill="#FFFFFF" fill-rule="evenodd" transform="translate(138.841215, 97.621050) rotate(-45.000000) translate(-138.841215, -97.621050) " points="138.841215 90.4960502 147.068698 104.74605 130.613733 104.74605"></polygon>
+                            <circle id="Oval-3" stroke="none" fill="#FFFFFF" fill-rule="evenodd" cx="94.9333333" cy="9.6" r="9"></circle>
+                            <circle id="Oval-2" stroke="#FFFFFF" stroke-width="6" fill="none" cx="143.433333" cy="158.1" r="27.5"></circle>
+                            <polyline id="Path-3" stroke="#FFFFFF" stroke-width="6" fill="none" transform="translate(22.358833, 161.329918) rotate(335.500000) translate(-22.358833, -161.329918) " points="6.35883326 156.829918 13.822215 165.829918 22.0325719 156.829918 30.0815161 165.829918 38.3588333 156.829918"></polyline>
+                            <rect id="Rectangle" stroke="none" fill="#FFFFFF" fill-rule="evenodd" transform="translate(8.004401, 112.671068) rotate(45.000000) translate(-8.004401, -112.671068) " x="3.00440115" y="107.671068" width="10" height="10"></rect>
+                        </g>
+                    </g>
+                    <g id="path5" mask="url(#mask-3)" fill-rule="nonzero">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

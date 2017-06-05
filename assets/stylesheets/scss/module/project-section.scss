@@ -171,6 +171,23 @@
       width: 100%;
       z-index: 2;
     }
+    .project-section-fg_text {
+      color: $white;
+      font-size: 24px;
+      margin-left: -255px;
+      margin-top: 130px;
+      left: 50%;
+      position: absolute;
+      text-align: right;
+      width: 350px;
+      z-index: 3;
+      .first-line {
+        display: inline-block;
+      }
+      .last-line {
+        margin-right: -16px;
+      }
+    }
     .project-section-bg_image {
       background-position: center;
       background-repeat: repeat;
@@ -190,6 +207,12 @@
     }
     &--greatest_hotels {
       background-color: $greatest-hotels-dark;
+      .project-section-fg_image {
+        background-size: cover;
+      }
+    }
+    &--venmo {
+      background-color: $venmo;
       .project-section-fg_image {
         background-size: cover;
       }
@@ -283,7 +306,20 @@
       .project-section-fg_image {
         height: 700px;
       }
+      .project-section-fg_text {
+        font-size: 33px;
+        margin-left: -215px;
+        margin-top: 130px;
+        .last-line {
+          margin-right: -16px;
+        }
+      }
       &--greatest_hotels {
+        .project-section-fg_image {
+          height: 600px;
+        }
+      }
+      &--venmo {
         .project-section-fg_image {
           height: 600px;
         }

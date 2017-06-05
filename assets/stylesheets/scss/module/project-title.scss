@@ -24,6 +24,13 @@
       color: $white;
     }
   }
+  &--blue {
+    background-color: $venmo;
+    color: $white;
+    .project-title-tags {
+      color: $white;
+    }
+  }
 
   &-wrap {
     width: 100%;

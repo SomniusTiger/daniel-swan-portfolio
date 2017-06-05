@@ -2,7 +2,6 @@
 .project-nav {
   @include clearfix();
   margin: 0 auto;
-  // max-width: 1440px;
   padding: 20px 0 0;
   width: 100%;
   a {
@@ -90,6 +89,14 @@
         background-color: $greatest-hotels;
         &:hover {
           background-color: lighten($greatest-hotels, 10%);
+        }
+      }
+    }
+    &--venmo {
+      a {
+        background-color: $venmo;
+        &:hover {
+          background-color: lighten($venmo, 10%);
         }
       }
     }
