@@ -96,6 +96,9 @@
     &--full {
       margin-top: 30px;
     }
+    &--no_margin {
+      margin: 0;
+    }
   }
   &-images {
     @include clearfix();
@@ -273,6 +276,10 @@
   }
   &--pink {
     background-color: $energy-hog-dark;
+    color: $white;
+  }
+  &--blue {
+    background-color: $venmo;
     color: $white;
   }
   &--less_padding {
