@@ -47,6 +47,13 @@
   box-shadow:         $x $y $blur $color #{$inset};
 }
 
+@mixin filter-shadow($offX: 2, $offY: 2, $blur: 2, $rgba: rgba(0, 0, 0, 0.3), $hex: #B2B2B2) {
+  -ms-filter    : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=" + $offX + ", OffY=" + $offY + ", Color='" + $hex + "')";
+  filter        : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=" + $offX + ", OffY=" + $offY + ", Color='" + $hex + "')";
+  -webkit-filter: drop-shadow(#{$offX}px #{$offY}px #{$blur}px $rgba);
+  filter        : drop-shadow(#{$offX}px #{$offY}px #{$blur}px $rgba);
+}
+
 // Project Square Gradient
 @mixin project-square-gradient($from-color, $to-color) {
   background: $to-color;
