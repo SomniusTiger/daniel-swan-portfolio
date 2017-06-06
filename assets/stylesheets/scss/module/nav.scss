@@ -7,7 +7,7 @@
   width: 100%;
   &--project {
     background-color: $white;
-    padding: 10px 20px 12px 15px;
+    padding: 10px 20px 10px 15px;
     text-align: right;
     z-index: 9999;
   }
@@ -87,7 +87,7 @@
 @media screen and (min-width: 360px) {
   .nav {
     &--project {
-      padding: 15px 20px;
+      padding: 12px 20px;
 
     }
     &-link {
@@ -105,7 +105,7 @@
 @media screen and (min-width: 600px) {
   .nav {
     &--project {
-      padding: 15px 20px;
+      padding: 12px 20px;
     }
     &-link {
       font-size: 16px;
@@ -149,7 +149,7 @@
     padding-right: 135px;
     padding-top: 36px;
     &--project {
-      padding: 24px 40px 24px 30px;
+      padding: 12px 40px 12px 30px;
     }
     &-link {
       margin: 0 25px;
