@@ -59,7 +59,7 @@
     }
   }
   &--creative-mornings {
-    background-position: 45%;
+    background-position: 40%;
     .project-fullwidth-text-inner {
       float: left;
       margin-left: 30px;
@@ -88,7 +88,7 @@
       }
     }
     &--creative-mornings {
-      background-position: 50%;
+      background-position: 40%;
       .project-fullwidth-text-inner {
         margin-left: 60px;
       }
@@ -112,6 +112,9 @@
       .project-fullwidth-text-inner {
         max-width: 280px;
       }
+    }
+    &--creative-mornings {
+      background-position: 50%;
     }
   }
 }
@@ -173,7 +176,6 @@
 @media screen and (min-width: 1200px) {
   .project-fullwidth {
     height: 90%;
-    max-height: 800px;
     &-text {
       &-inner {
         max-width: 570px;
@@ -189,29 +191,54 @@
     }
     &--venmo {
       .project-fullwidth-text-inner {
-        margin-right: 9%;
+        margin-right: 17%;
         max-width: 570px;
         padding-right: 0;
       }
     }
     &--energy-hog {
       .project-fullwidth-text-inner {
-        margin-left: 15%;
+        margin-left: 17%;
         padding-left: 0;
       }
     }
     &--greatest-hotels {
       .project-fullwidth-text-inner {
-        margin-right: 9%;
-        max-width: 570px;
+        margin-right: 17%;
+        max-width: 360px;
         padding-right: 0;
       }
     }
     &--creative-mornings {
       .project-fullwidth-text-inner {
-        margin-left: 15%;
+        margin-left: 17%;
         max-width: 360px;
         padding-left: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .project-fullwidth {
+    &--venmo {
+      .project-fullwidth-text-inner {
+        max-width: 570px;
+      }
+    }
+    &--energy-hog {
+      .project-fullwidth-text-inner {
+        max-width: 570px;
+      }
+    }
+    &--greatest-hotels {
+      .project-fullwidth-text-inner {
+        max-width: 570px;
+      }
+    }
+    &--creative-mornings {
+      .project-fullwidth-text-inner {
+        max-width: 570px;
       }
     }
   }
