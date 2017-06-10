@@ -37,7 +37,6 @@
   }
 
   &-text {
-    margin: 20px 0 0;
     &--half {
       margin-bottom: 40px;
       width: 100%;
@@ -366,6 +365,7 @@
         }
         &--fullwidth {
           float: none;
+          margin-bottom: 20px;
           padding: 0;
           width: 100%;
           &:nth-child(odd), &:nth-child(even) {

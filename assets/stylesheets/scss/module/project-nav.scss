@@ -2,7 +2,6 @@
 .project-nav {
   @include clearfix();
   margin: 0 auto;
-  padding: 20px 0 0;
   width: 100%;
   a {
     @include clearfix();
@@ -125,7 +124,6 @@
   .project-nav {
     border-top: solid 1px $grey-lighter;
     margin-bottom: -2px;
-    padding-top: 0;
     a {
       max-width: 500px;
     }
