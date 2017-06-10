@@ -201,6 +201,7 @@
       margin-left: -255px;
       margin-top: 130px;
       left: 50%;
+      line-height: 1.4em;
       position: absolute;
       text-align: right;
       width: 350px;
@@ -262,7 +263,7 @@
       background-color: $grey-darker;
       color: $white;
       display: inline-block;
-      padding: 10px 15px;
+      padding: 9px 15px 10px;
       vertical-align: bottom;
       img {
         position: relative;
@@ -339,14 +340,6 @@
     &--product {
       .project-section-fg_image {
         height: 700px;
-      }
-      .project-section-fg_text {
-        font-size: 33px;
-        margin-left: -215px;
-        margin-top: 130px;
-        .last-line {
-          margin-right: -16px;
-        }
       }
       &--greatest_hotels {
         .project-section-fg_image {
@@ -509,6 +502,14 @@
 }
 @media screen and (min-width: 1140px) {
   .project-section {
+    &--product {
+      .project-section-fg_text {
+        font-size: 33px;
+        letter-spacing: 0.5px;
+        margin-left: -215px;
+        margin-top: 130px;
+      }
+    }
     &-text {
       &--half {
         &--venmo {
