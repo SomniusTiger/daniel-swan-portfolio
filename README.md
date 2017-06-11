@@ -1,4 +1,4 @@
-#Portfolio of Danny Swan
+# Portfolio of Danny Swan
 
 A simple, static site. Built on plain HTML, with SCSS and JS that is compiled and minified via Grunt.
 
