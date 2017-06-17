@@ -91,66 +91,66 @@ module.exports = function(grunt) {
     },
 
     realFavicon: {
-  		favicons: {
+      favicons: {
         src: 'assets/images/favicons/master/master.png',
         dest: 'assets/images/favicons/dest/',
         options: {
           iconsPath: 'assets/images/favicons/dest/',
-          html: [ 'index.html', 'creative-mornings/index.html', 'energy-hog/index.html', 'greatest-hotels/index.html' ],
-  				design: {
-  					ios: {
-  						pictureAspect: 'backgroundAndMargin',
-  						backgroundColor: '#ffffff',
-  						margin: '14%',
-  						assets: {
-  							ios6AndPriorIcons: false,
-  							ios7AndLaterIcons: false,
-  							precomposedIcons: false,
-  							declareOnlyDefaultIcon: true
-  						}
-  					},
-  					desktopBrowser: {},
-  					windows: {
-  						pictureAspect: 'noChange',
-  						backgroundColor: '#da532c',
-  						onConflict: 'override',
-  						assets: {
-  							windows80Ie10Tile: false,
-  							windows10Ie11EdgeTiles: {
-  								small: false,
-  								medium: true,
-  								big: false,
-  								rectangle: false
-  							}
-  						}
-  					},
-  					androidChrome: {
-  						pictureAspect: 'noChange',
-  						themeColor: '#ffffff',
-  						manifest: {
-  							display: 'standalone',
-  							orientation: 'notSet',
-  							onConflict: 'override',
-  							declared: true
-  						},
-  						assets: {
-  							legacyIcon: false,
-  							lowResolutionIcons: false
-  						}
-  					},
-  					safariPinnedTab: {
-  						pictureAspect: 'blackAndWhite',
-  						threshold: 95.3125,
-  						themeColor: '#5bbad5'
-  					}
-  				},
-  				settings: {
-  					scalingAlgorithm: 'Mitchell',
-  					errorOnImageTooSmall: false
-  				}
-  			}
-  		}
-  	}
+          html: [ 'index.html', 'venmo/index.html', 'creative-mornings/index.html', 'energy-hog/index.html', 'greatest-hotels/index.html' ],
+          design: {
+            ios: {
+              pictureAspect: 'backgroundAndMargin',
+              backgroundColor: '#ffffff',
+              margin: '14%',
+              assets: {
+                ios6AndPriorIcons: false,
+                ios7AndLaterIcons: false,
+                precomposedIcons: false,
+                declareOnlyDefaultIcon: true
+              }
+            },
+            desktopBrowser: {},
+            windows: {
+              pictureAspect: 'noChange',
+              backgroundColor: '#da532c',
+              onConflict: 'override',
+              assets: {
+                windows80Ie10Tile: false,
+                windows10Ie11EdgeTiles: {
+                  small: false,
+                  medium: true,
+                  big: false,
+                  rectangle: false
+                }
+              }
+            },
+            androidChrome: {
+              pictureAspect: 'noChange',
+              themeColor: '#ffffff',
+              manifest: {
+                display: 'standalone',
+                orientation: 'notSet',
+                onConflict: 'override',
+                declared: true
+              },
+              assets: {
+                legacyIcon: false,
+                lowResolutionIcons: false
+              }
+            },
+            safariPinnedTab: {
+              pictureAspect: 'blackAndWhite',
+              threshold: 95.3125,
+              themeColor: '#5bbad5'
+            }
+          },
+          settings: {
+            scalingAlgorithm: 'Mitchell',
+            errorOnImageTooSmall: false
+          }
+        }
+      }
+    }
 
   });
 
